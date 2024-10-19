@@ -30,7 +30,7 @@ agent exploitant, date, heure début, heure fin, kilométrage, avaries, compte-r
 date début, date fin, équipement, type de maintenance (préventive ou corrective), compte-rendu
 
 ## Site
-type (soit "atelier de maintenance" pour la maintenance préventive, soit "centre de dépannage" pour la maintenance corrective), adresse, responsable
+type (soit "atelier de maintenance" pour la maintenance préventive, soit "centre de dépannage" pour la maintenance corrective), adresse, coordonnées géographiques, responsable
 
 ## Tâches
 nom, intervention concernées
