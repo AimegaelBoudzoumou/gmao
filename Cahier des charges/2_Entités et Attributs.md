@@ -9,7 +9,7 @@ Plus tard, chaque entité sera représentée par une table dans la base de donn�
 [data-modeling](https://www.ibm.com/fr-fr/topics/data-modeling)-->
 
 ## MR (pour Moyen Roulant)
-code (concaténation de plusieurs informations), mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation), modèle (exemples: MP 89 CC, TMVI), numéro (ex: 01), usage (travaux, voyageurs),
+code (concaténation de plusieurs informations), matériel (exemples: MP 89 CC, TMVI), livraison, mode de conduite (conduite conducteur cc ou conduite automatique ca), livré, autres informations, statut (en service, en livraison, reformé, indisponible, sans affectation), usage (travaux, voyageurs)
 
 ## Matériel
 constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
