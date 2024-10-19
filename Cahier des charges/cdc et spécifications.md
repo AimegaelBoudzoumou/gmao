@@ -30,7 +30,7 @@ Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoi
 ### MR
 code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation)
 
-### modèle de MR :
+### Modèle de MR
 constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
 
 ### Ligne
