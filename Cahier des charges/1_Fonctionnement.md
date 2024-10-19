@@ -50,5 +50,5 @@ Dans les deux types d'intervention (préventive ou corrective), le responsable/c
 Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de __produits__. Les produits sont stockés dans un __magasin__. Un magasin se trouve sur un site.
 
 ### Quelques questions à éclaircir :
-- est ce qu'une ligne peut accueillir des matériel de MR différents ?
-- est ce que tout le matériel est affecté uniquement à une seule ligne ?
+- est ce qu'une ligne peut accueillir des matériels différents ?
+- est ce que tout un matériel est affecté uniquement à une seule ligne ?
