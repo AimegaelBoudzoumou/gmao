@@ -21,7 +21,7 @@ numéro
 nom, MR associé
 
 ## Agent/Employé
-nom, prenom, role, département (MRF ou uExpoitation), date de naissance, téléphone
+nom, prenom, poste, département (MRF ou Expoitation), date de naissance, téléphone
 
 ## Exploitation
 agent, date, heure début, heure fin, kilométrage, avaries, compte-rendu agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie,
