@@ -5,12 +5,12 @@
 Note : cette partie contient des termes techniques.
 
 Une moyen roulant (MR) métro, RER (réseau express régional) entre dans le parc dans le parc des actifs de l'entreprise. 
-Un MR appartient à un __modèle__ et possède une numérotation unique. 
-Exemple de modèle : MP 14 CA (Metro Pneu appel d'offres 2014). Un modèle est affecté à un ou plusieurs __ligne__
+Un MR appartient à un __Modèle__ et possède une numérotation unique. 
+Exemple de modèle : MP 14 CA (Metro Pneu appel d'offres 2014). Un modèle est affecté à un ou plusieurs __Ligne__
 
 Le code/identifiant d'un MR est composé du nom de modèle concatené au numéro unique.
 
-Un MR est confié à un __agent__ conducteur (cas d'une conduite conducteur) : c'est la notion de __Exploitation__. 
+Un MR est confié à un __Agent__ conducteur (cas d'une conduite conducteur) : c'est la notion de __Exploitation__. 
 A la fin d'une expoitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation.
 
 Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux types d'interventions : corrective et préventive.
@@ -21,9 +21,9 @@ En cas d'avaries/pannes, la table __Interventions__ est mise à jour. Cette mise
 2/ intervention préventive : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive.
 A l'atteinte du fameux nombre de kilomètres parcourus, la table __Interventions__ est mise à jour. Cette mise à jour se fait grâce à un _trigger_ qui écoute le champ "kilométrage" de la table Exploitation.
 
-Dans les deux cas, le responsable/coordinateur des maintenances décide planifer une intervention. Il renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseingnés par les techniciens de maintenance), équipements concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens, la ou les __tâches__ à réalier.
+Dans les deux cas, le responsable/coordinateur des maintenances décide planifer une intervention. Il renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseingnés par les techniciens de maintenance), équipements concernés, __Site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens, la ou les __Tâches__ à réalier.
 
-Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de produits. Les produits sont stockés dans un magasin. Un magasin se trouve sur un site.
+Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de __Produits__. Les produits sont stockés dans un __Magasin__. Un magasin se trouve sur un site.
 
 ## 2/ Les entités et leurs attributs
 
