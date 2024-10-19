@@ -1,4 +1,4 @@
-# GMOA
+# GMAO
 
 Ce projet a pour but de présenter une conception fonctionnel d'un système de GMAO (gestion de la maintenance assistée par ordinateur).
 
