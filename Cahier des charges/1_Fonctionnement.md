@@ -6,7 +6,7 @@ __Note :__
 - ce texte contient des termes techniques.
 - les mots en gras représentent les principales entités.
 
-__A/ Exploitation__
+## __A/ Exploitation__
 
 Une moyen roulant (__MR__) métro, RER (réseau express régional) est intégré dans le parc des actifs de l'entreprise. 
 
@@ -26,7 +26,7 @@ Dans le cas d'une conduite automatique (dite CA), l'attribut Agent de la table "
 
 A la fin d'une exploitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation. Dans le cas d'une CA (Conduite Automatique), ces informations sont soit copiées manuellemen par un agent, soit transmise informatique par le MR à la base de données.
 
-__B/ Maintenance__: cas d'une CC (conduite conducteur)
+## __B/ Maintenance__: cas d'une CC (conduite conducteur)
 
 Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux types d'__interventions__ : corrective et préventive.
 
@@ -45,7 +45,7 @@ Dans la même logique, un _trigger_ similaire peut être mis en place pour plani
 
 Dans les deux types d'intervention (préventive ou corrective), le responsable/coordinateur des maintenances décide de planifer une intervention. Il modifie l'état du MR et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseignés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens en charge de la maintenance, la ou les __tâches__ à réaliser.
 
-__C/ Stocks__
+## __C/ Stocks__
 
 Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de __produits__. Les produits sont stockés dans un __magasin__. Un magasin se trouve sur un site.
 
