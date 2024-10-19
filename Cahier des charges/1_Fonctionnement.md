@@ -28,7 +28,7 @@ Si Exploitation.Kilometrage >= MR.PMP alors : les deux actions suivantes sont à
 - le MR est enregistré dans la table "interventions" pour une maintenance préventive.
 - le champ MR.PMP est incrémenté de 15.000 (représentant ainsi le prochaine kilométrage afin de planifier la prochaine maintenance préventive).
 
-Dans la même logique, un _trigger_ similaire peut être mis en place pour le "changement des pneus de métro", qui doit se faire chaque 250.000 Km.
+Dans la même logique, un _trigger_ similaire peut être mis en place pour planifer le "changement des pneus de métro", qui doit se faire chaque 250.000 Km environ.
 
 
 Dans les deux cas, le responsable/coordinateur des maintenances décide planifer une intervention. Il modifie l'état du MR (ex: indisponible) et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseingnés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens, la ou les __tâches__ à réalier.
