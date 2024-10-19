@@ -55,6 +55,6 @@ Il est possible de mettre en place un __trigger__ pour optimiser le stock des pr
 
 Si on souhaite garder un historique des alertes produits, on doit créer une table alerte_produits associée à la table produit. Les cardinalités max de l'association vaudront N,N
 
-### Quelques questions à éclaircir :
+## __D/ Quelques questions à éclaircir__ :
 - est ce qu'une ligne peut accueillir des matériels différents ?
 - est ce que tout un matériel est affecté uniquement à une seule ligne ?
