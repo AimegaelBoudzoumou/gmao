@@ -1,6 +1,6 @@
 # Cahier des charges - Spécifications fonctionnelles
 
-## 1/ Historique/Fonctionnement
+## 1/ Historique-Fonctionnement
 
 Note : cette partie contient des termes techniques.
 
@@ -20,7 +20,7 @@ Dans les deux cas, le responsable/coordinateur des maintenances décide planifer
 
 Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de produits. Les produits sont stockés dans un magasin. Un magasin se trouve sur un site.
 
-## 2/ Les entités intéragissant et leurs attributs
+## 2/ Les entités et leurs attributs
 
 ### MR
 code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation), constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
