@@ -4,7 +4,12 @@
 
 Note : cette partie contient des termes techniques.
 
-Une moyen roulant (MR) métro, RER (réseau express régional) entre dans le parc dans le parc des actifs de l'entreprise.
+Une moyen roulant (MR) métro, RER (réseau express régional) entre dans le parc dans le parc des actifs de l'entreprise. 
+Un MR appartient à un __modèle__ et possède une numérotation unique. 
+Exemple de modèle : MP 14 CA (Metro Pneu appel d'offres 2014). Un modèle est affecté à un ou plusieurs __ligne__
+
+Le code/identifiant d'un MR est composé du nom de modèle concatené au numéro unique.
+
 Un MR est confié à un __agent__ conducteur (cas d'une conduite conducteur) : c'est la notion de __Exploitation__. 
 A la fin d'une expoitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation.
 
@@ -23,7 +28,13 @@ Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoi
 ## 2/ Les entités et leurs attributs
 
 ### MR
-code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation), constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
+code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation)
+
+### modèle de MR :
+constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
+
+### Ligne
+numéro
 
 ### Equipement
 nom, MR associé
@@ -48,5 +59,4 @@ nom, intervention concernées
 ### Magasins
 
 ### Quelques piste de réflexions :
-- regrouper les informations techniques d'un MR au sein d'une table à part.
-- C'est le MR qui est affecté à une ligne ou plutôt une famille de MR (ex MP 14 CA)
+- est ce qu'une ligne peut accueillir des modèle de MR différents ?
