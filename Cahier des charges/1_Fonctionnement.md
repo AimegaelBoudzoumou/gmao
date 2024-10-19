@@ -45,7 +45,7 @@ Dans la même logique, un _trigger_ similaire peut être mis en place pour plani
 
 Dans les deux types d'intervention (préventive ou corrective), le responsable/coordinateur des maintenances décide de planifer une intervention. Il modifie l'état du MR et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseignés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens en charge de la maintenance, la ou les __tâches__ à réaliser.
 
-__C/ Stocks__:
+__C/ Stocks__
 
 Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de __produits__. Les produits sont stockés dans un __magasin__. Un magasin se trouve sur un site.
 
