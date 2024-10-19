@@ -2,7 +2,7 @@
 
 Note : cette partie contient des termes techniques.
 
-Une moyen roulant (MR) métro, RER (réseau express régional) entre dans le parc dans le parc des actifs de l'entreprise. Un MR appartient à un Modèle et possède une numérotation unique. Exemple de modèle : MP 14 CA (Metro Pneu appel d'offres 2014). Un modèle est affecté à un ou plusieurs Ligne
+Une moyen roulant (MR) métro, RER (réseau express régional) entre dans le parc dans le parc des actifs de l'entreprise. Un MR appartient à un Modèle et possède une numérotation unique. Exemple de modèle : MP 14 CA (Metro Pneu appel d'offres 2014). Un modèle est affecté à un ou plusieurs Lignes.
 
 Le code/identifiant d'un MR est composé du nom de modèle concatené au numéro unique.
 
