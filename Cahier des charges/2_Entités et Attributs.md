@@ -5,8 +5,8 @@ Chaque entité contient des attributs. Les entités sont reliées entre elles pa
 
 Plus tard, chaque entité sera représentée par une table dans la base de données; et les attributs seront les champs de ces tables.
 
-Ce tutoriel de IBM contient des informations détaillées sur le modèle relationnel: 
-[data-modeling](https://www.ibm.com/fr-fr/topics/data-modeling)
+<!--Ce tutoriel de IBM contient des informations détaillées sur le modèle relationnel: 
+[data-modeling](https://www.ibm.com/fr-fr/topics/data-modeling)-->
 
 ## MR (pour Moyen Roulant)
 code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation), modèle (exemples: MP 89 CC, TMVI), numéro (ex: 01), usage (travaux, voyageurs),
