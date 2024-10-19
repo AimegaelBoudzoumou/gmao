@@ -12,7 +12,7 @@ Plus tard, chaque entité sera représentée par une table dans la base de donn�
 code (concaténation de plusieurs informations), matériel (exemples: MP 89 CC, TMVI), livraison, mode de conduite (conduite conducteur cc ou conduite automatique ca), livré, autres informations, statut (en service, en livraison, reformé, indisponible, sans affectation), usage (travaux, voyageurs)
 
 ## Matériel
-constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
+code, constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
 
 ## Ligne
 numéro
