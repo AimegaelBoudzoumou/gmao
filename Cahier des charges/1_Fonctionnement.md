@@ -53,7 +53,7 @@ Chaque entrée d'un produit augmente la quantité réelle du produit. Chaque sor
 
 Il est possible de mettre en place un __trigger__ pour optimiser le stock des produits. Ce __triger__ écoutera le champ "seuil limite" de la table "produits". En fonction du type, gamme et catégorie du produit, si le seuil limite est atteint (ou dépassé), une champ (booléen) "alerte_produit) est mis à _true_ pour 1 (ce champ vaut initialement _false_ pour 0).
 
-Si on souhaite garder un historique des alertes produits, on doit créer une table alter_produit, associé à la table produit; par une relation N,N
+Si on souhaite garder un historique des alertes produits, on doit créer une table alerte_produits associée à la table produit. Les cardinalités max de l'association vaudront N,N
 
 ### Quelques questions à éclaircir :
 - est ce qu'une ligne peut accueillir des matériels différents ?
