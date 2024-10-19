@@ -23,7 +23,7 @@ Un MR est confié à un __Agent conducteur__ (cas d'une conduite conducteur dite
 
 Dans le cas d'une conduite automatique (dite CA), l'attribut Agent de la table "exploitation" contient une valeur par défaut (exemple Automatique).
 
-A la fin d'une expoitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation.
+A la fin d'une exploitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation.
 
 Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux types d'__interventions__ : corrective et préventive.
 
