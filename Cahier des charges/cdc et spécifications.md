@@ -28,7 +28,7 @@ Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoi
 ## 2/ Les entités et leurs attributs
 
 ### MR
-code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation)
+code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation), modèle (exemples: _MP 89 CC_, _TMVI_), numéro (ex: _01_), usage (travaux, voyageurs), 
 
 ### Modèle de MR
 constructeur, composition, écartement des roues, longueur, intercirculation, vitesse maximale, affectation actuelle, livraison, période de service, équipement
