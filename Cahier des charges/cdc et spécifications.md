@@ -49,3 +49,4 @@ nom, intervention concernées
 
 ### Quelques piste de réflexions :
 - regrouper les informations techniques d'un MR au sein d'une table à part.
+- C'est le MR qui est affecté à une ligne ou plutôt une famille de MR (ex MP 14 CA)
