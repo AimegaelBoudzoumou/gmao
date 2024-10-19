@@ -31,6 +31,6 @@ Si Exploitation.Kilometrage >= MR.PMP alors : les deux actions suivantes sont à
 Dans la même logique, un _trigger_ similaire peut être mis en place pour planifer le "changement des pneus de métro", qui doit se faire chaque 250.000 Km environ.
 
 
-Dans les deux types d'intervention (préventive ou corrective), le responsable/coordinateur des maintenances décide de planifer une intervention. Il modifie l'état du MR et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseignés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens en charge de la maintenance, la ou les __tâches__ à réalier.
+Dans les deux types d'intervention (préventive ou corrective), le responsable/coordinateur des maintenances décide de planifer une intervention. Il modifie l'état du MR et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseignés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens en charge de la maintenance, la ou les __tâches__ à réaliser.
 
 Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de __produits__. Les produits sont stockés dans un __magasin__. Un magasin se trouve sur un site.
