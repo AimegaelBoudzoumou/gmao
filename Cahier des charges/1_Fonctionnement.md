@@ -18,9 +18,15 @@ Un MR est confié à un __Agent conducteur__ (cas d'une conduite conducteur) : c
 
 Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux types d'__interventions__ : corrective et préventive.
 
-1/ intervention corrective : après une exploitation, l'agent conducteur renseigne dans son rapport d'exploitation, les éventuelles __avaries__. En cas d'avaries/pannes, la table Interventions est mise à jour. Cette mise à jour se fait grâce à un trigger qui écoute le champ "avaries" de la table exploitation.
+__1/ intervention corrective__ : après une exploitation, l'agent conducteur renseigne dans son rapport d'exploitation, les éventuelles __avaries__. En cas d'avaries/pannes, la table Interventions est mise à jour. Cette mise à jour se fait grâce à un trigger qui écoute le champ "avaries" de la table exploitation.
 
-2/ intervention préventive : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive. A l'atteinte du fameux nombre de kilomètres parcourus, la table Interventions est mise à jour. Cette mise à jour se fait grâce à un trigger qui écoute le champ "kilométrage" de la table exploitation.
+__2/ intervention préventive__ : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive. A l'atteinte du fameux nombre de kilomètres parcourus, la table interventions est mise à jour. Cette mise à jour se fait grâce à un trigger qui écoute le champ "PMP" (pour Prochaine Maintenance Préventive) de la table MR (ou Exploitation : à décider).
+Fonctionnellement : le champ "PMP" vaut initialement 15.000. Chaque fois que le champ "kilométrage" de la table Exploitation est mis à jour, le contrôle suivant est effectué : 
+Si Exploitation.Kilometrage >= MR.PMP alors : les deux actions suivantes sont à effectuer :
+- le MR est enregistré dans la table "interventions" pour une maintenance préventive.
+- le champ MR.PMP est incrémenté de 15.000 (représentant ainsi le prochaine kilométrage afin de planifier la prochaine maintenance préventive)
+Dans la même logique, un _trigger_ similaire peut être mis en place pour le "changement des pneus de métro", qui doit se faire chaque 250.000 Km.
+
 
 Dans les deux cas, le responsable/coordinateur des maintenances décide planifer une intervention. Il modifie l'état du MR (ex: indisponible) et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseingnés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens, la ou les __tâches__ à réalier.
 
