@@ -27,7 +27,7 @@ nom, prenom, role, département (MRF ou uExpoitation), date de naissance, télé
 date, heure début, heure fin, kilométrage, avaries, compte-rendu agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie,
 
 ## Interventions
-date début, date fin, équipement
+date début, date fin, équipement, type de maintenance (préventive ou corrective)
 
 ## Site
 type (soit "atelier de maintenance" pour la maintenance préventive, soit "centre de dépannage" pour la maintenance corrective), adresse, responsable
