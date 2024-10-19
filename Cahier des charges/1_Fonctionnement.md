@@ -7,6 +7,7 @@ __Note :__
 - les mots en gras représentent les principales entités.
 
 __A/ Exploitation__
+
 Une moyen roulant (__MR__) métro, RER (réseau express régional) est intégré dans le parc des actifs de l'entreprise. 
 
 Un MR appartient à un __matériel__ et possède un code unique. Un matériel est affecté à une ou plusieurs __lignes__.
