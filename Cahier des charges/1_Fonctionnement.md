@@ -26,7 +26,7 @@ Dans le cas d'une conduite automatique (dite CA), l'attribut Agent de la table "
 
 A la fin d'une exploitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation. Dans le cas d'une CA (Conduite Automatique), ces informations sont soit copiées manuellemen par un agent, soit transmise informatique par le MR à la base de données.
 
-__B/ Maintenance__
+__B/ Maintenance__: cas d'une CC (conduite conducteur)
 
 Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux types d'__interventions__ : corrective et préventive.
 
