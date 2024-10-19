@@ -55,8 +55,10 @@ type (soit "atelier de maintenance" pour la maintenance préventive, soit "centr
 nom, intervention concernées
 
 ### Produits
+nom, descriptif, unité de comptage, quantité réelle, seuil limite, gamme, catégorie, date du premier enregistrement
 
 ### Magasins
+nom, adresse, 
 
 ### Quelques piste de réflexions :
 - est ce qu'une ligne peut accueillir des modèle de MR différents ?
