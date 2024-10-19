@@ -20,13 +20,13 @@ Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux t
 
 __1/ intervention corrective__ : après une exploitation, l'agent conducteur renseigne dans son rapport d'exploitation, les éventuelles __avaries__. En cas d'avaries/pannes, la table Interventions est mise à jour. Cette mise à jour se fait grâce à un _trigger_ qui écoute le champ "avaries" de la table exploitation.
 
-__2/ intervention préventive__ : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive. A l'atteinte du fameux nombre de kilomètres parcourus, la table interventions est mise à jour. Cette mise à jour se fait grâce à un _trigger_ qui écoute le champ "PMP" (pour Prochaine Maintenance Préventive) de la table MR (ou Exploitation : à décider).
+__2/ intervention préventive__ : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive. A l'atteinte du fameux nombre de kilomètres parcourus, la table interventions est mise à jour. Cette mise à jour se fait grâce à un _trigger_ qui écoute le champ "PMP" (pour Prochaine Maintenance Préventive). de la table MR (ou Exploitation : à décider).
 
 Fonctionnellement : le champ "PMP" vaut initialement 15.000. Chaque fois que le champ "kilométrage" de la table Exploitation est mis à jour, le contrôle suivant est effectué :
 
 Si Exploitation.Kilometrage >= MR.PMP alors : les deux actions suivantes sont à effectuer :
 - le MR est enregistré dans la table "interventions" pour une maintenance préventive.
-- le champ MR.PMP est incrémenté de 15.000 (représentant ainsi le prochaine kilométrage afin de planifier la prochaine maintenance préventive)
+- le champ MR.PMP est incrémenté de 15.000 (représentant ainsi le prochaine kilométrage afin de planifier la prochaine maintenance préventive).
 Dans la même logique, un _trigger_ similaire peut être mis en place pour le "changement des pneus de métro", qui doit se faire chaque 250.000 Km.
 
 
