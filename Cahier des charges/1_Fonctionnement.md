@@ -8,8 +8,8 @@ __Note :__
 
 
 Une moyen roulant (__MR__) métro, RER (réseau express régional) est intégré dans le parc des actifs de l'entreprise. 
-Un MR appartient à un __matériel__ et possède un code unique.
-Un modèle est affecté à une ou plusieurs __lignes__.
+
+Un MR appartient à un __matériel__ et possède un code unique. Un matériel est affecté à une ou plusieurs __lignes__.
 
 Le code/identifiant unique d'un MR est le résultat de la concaténation de plusieurs informations:
 
