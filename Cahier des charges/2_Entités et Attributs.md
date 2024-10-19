@@ -4,7 +4,7 @@ L'analyse du cahier des charges et des spécifications fonctionnelles permet de 
 Chaque entité contient des attributs. Les entités sont reliées entre elles par des associations.
 
 Ce tutoriel de IBM contient des informations détaillées sur le modèle relationnel: 
-[data-modeling]([https://example.com/bild.jpg](https://www.ibm.com/fr-fr/topics/data-modeling)
+[data-modeling](https://www.ibm.com/fr-fr/topics/data-modeling)
 
 ## MR (pour Moyen Roulant)
 code, mode de conduite (conduite conducteur cc ou conduite automatique ca), état (en service, en livraison, reformé, indisponible, sans affectation), modèle (exemples: MP 89 CC, TMVI), numéro (ex: 01), usage (travaux, voyageurs),
