@@ -40,6 +40,8 @@ Si Exploitation.Kilometrage >= MR.PMP alors : les deux actions suivantes sont à
 - le MR est enregistré dans la table "interventions" pour une maintenance préventive.
 - le champ MR.PMP est incrémenté de 15.000 (représentant ainsi le prochaine kilométrage afin de planifier la prochaine maintenance préventive).
 
+Note : le terme Exploitation.Kilometrage signifie "le champ Kilometrage de la table Exploitation".
+
 Dans la même logique, un _trigger_ similaire peut être mis en place pour planifer le "changement des pneus de métro", qui doit se faire chaque 250.000 Km environ.
 
 
