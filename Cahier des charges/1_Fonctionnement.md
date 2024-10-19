@@ -1,6 +1,8 @@
 # Fonctionnement
 
-Note : 
+Le texte qui suit représente le cahier des charges et les spécifications fonctionnelles de ce système de GMAO.
+
+__Note : __
 - cette partie contient des termes techniques.
 - les mots en gras représentent les principales entités
 
