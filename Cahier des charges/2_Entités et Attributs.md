@@ -3,6 +3,8 @@
 L'analyse du cahier des charges et des spécifications fonctionnelles permet de répérer les éléments (entités) amenés à interagir au sein d'un applicatif.
 Chaque entité contient des attributs. Les entités sont reliées entre elles par des associations.
 
+Plus loin, chaque entité sera représenté par une table dans la base de données; et les attributs seront les champs de ces tables.
+
 Ce tutoriel de IBM contient des informations détaillées sur le modèle relationnel: 
 [data-modeling](https://www.ibm.com/fr-fr/topics/data-modeling)
 
