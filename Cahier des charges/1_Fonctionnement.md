@@ -7,8 +7,11 @@ Un MR appartient à un __matériel__ et possède un code unique.
 Un modèle est affecté à une ou plusieurs __lignes__.
 
 Le code/identifiant unique d'un MR est le résultat de la concaténation de plusieurs informations:
+
 Exemple de code : MP 14 CA n°1001
+
 Matériel : MP 14 CA VA. Metro Pneu appel d'offres 2014 Conduite Automatique Série VA à 8 voitures
+
 Numéro : 1001 (CA-07)
 
 Un MR est confié à un __Agent conducteur__ (cas d'une conduite conducteur) : c'est la notion d'__exploitation__. A la fin d'une expoitation, le conducteur renseigne un "rapport d'exploitation" des informations sur le MR : kilométrage, heure de début et de fin d'exploitation.
