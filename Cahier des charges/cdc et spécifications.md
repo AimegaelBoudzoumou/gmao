@@ -18,7 +18,7 @@ A l'atteinte du fameux nombre de kilomètres parcourus, la table __Interventions
 
 Dans les deux cas, le responsable/coordinateur des maintenances décide planifer une intervention. Il renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseingnés par les techniciens de maintenance), équipements concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens, la ou les __tâches__ à réalier.
 
-Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de produits. 
+Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de produits. Les produits sont stockés dans un magasin. Un magasin se trouve sur un site.
 
 ## 2/ Les entités intéragissant et leurs attributs
 
