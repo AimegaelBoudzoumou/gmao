@@ -1,6 +1,6 @@
 # GMAO
 
-Ce projet a pour but de présenter une conception fonctionnel d'un système de GMAO (gestion de la maintenance assistée par ordinateur).
+Ce projet a pour but de présenter une conception fonctionnel d'un système de GMAO (gestion de la maintenance assistée par ordinateur), dans un contexte de transport ferroviaire.
 
 Il est constitué des éléments suivants:
 
