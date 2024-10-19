@@ -49,6 +49,10 @@ Dans les deux types d'intervention (préventive ou corrective), le responsable/c
 
 Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoin de __produits__. Les produits sont stockés dans un __magasin__. Un magasin se trouve sur un site.
 
+Chaque entrée d'un produit augmente la quantité réelle du produit. Chaque sortie (utilisation lors d'une intervention) de produit diminue la quantité réelle du produit.
+
+Il est possible de mettre en place un __trigger__ pour optimiser le stock des produits. Ce __triger__ écoutera le champ "seuil limite" de la table "produits". En fonction du type, gamme et catégorie du produit, si le seuil limite est atteint (ou dépassé), une alerte produit est déclenchée.
+
 ### Quelques questions à éclaircir :
 - est ce qu'une ligne peut accueillir des matériels différents ?
 - est ce que tout un matériel est affecté uniquement à une seule ligne ?
