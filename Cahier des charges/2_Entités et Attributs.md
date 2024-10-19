@@ -24,7 +24,7 @@ nom, MR associé
 nom, prenom, role, département (MRF ou uExpoitation), date de naissance, téléphone
 
 ## Exploitation
-date, heure début, heure fin, kilométrage, avaries, compte-rendu agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie,
+agent, date, heure début, heure fin, kilométrage, avaries, compte-rendu agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie,
 
 ## Interventions
 date début, date fin, équipement, type de maintenance (préventive ou corrective), compte-rendu
