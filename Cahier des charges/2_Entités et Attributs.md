@@ -36,7 +36,7 @@ code, type (soit "atelier de maintenance" pour la maintenance préventive, soit 
 code, nom, intervention concernées
 
 ## Produits
-code, nom, descriptif, type de produit, unité de comptage, quantité réelle, seuil limite, gamme, catégorie, date du premier enregistrement, alerte_produit
+code, nom, descriptif, type, gamme, catégorie, unité de comptage, quantité réelle, seuil limite, date du premier enregistrement, alerte_produit
 
 ## Magasins
 code, nom, adresse
