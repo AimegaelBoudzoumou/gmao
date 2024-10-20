@@ -29,7 +29,7 @@ __Champ 2 : date_debut_interventions__
 - Calcul (règle de calcul): aucun
 - Règle: date fixée par le/la responsable de la maintenance
 
-__Champ 3: date_fin_interventions__
+__Champ 3 : date_fin_interventions__
 - code: date_fin_interventions
 - signification: date de fin prévue pour l'intervention
 - type: date
@@ -38,7 +38,7 @@ __Champ 3: date_fin_interventions__
 - Calcul (règle de calcul): aucun
 - Règle: date non fixée à l'avance
 
-__Champ 4: type_de_maintenance_interventions__
+__Champ 4 : type_de_maintenance_interventions__
 - code: type_de_maintenance_interventions
 - signification: type de maintenance à réaliser : soit préventive, soit corrective
 - type: chaîne de caractères
@@ -47,7 +47,7 @@ __Champ 4: type_de_maintenance_interventions__
 - Calcul (règle de calcul): aucun
 - Règle: la maintenance préventive est effectuée à des intervalles de temps connus et régulier, la maintenance corrective est réalisée à l'apparition d'une avarie sur le moyen roulant
 
-__Champ 5: compte_rendu_interventions__
+__Champ 5 : compte_rendu_interventions__
 - code:  compte_rendu_interventions
 - signification: sorte de reour d'expérience sur l'intervention effectuée
 - type: chaîne de caractères
@@ -56,7 +56,7 @@ __Champ 5: compte_rendu_interventions__
 - Calcul (règle de calcul): aucun
 - Règle: faire un résumé du travail effectué : les points bloquants, les solutions mises en oeuvre
 
-__Champ 6: #code_moyen_roulant__
+__Champ 6 : #code_moyen_roulant__
 - code: code_moyen_roulant
 - signification: identifiant unique d'un moyen roulant
 - type: chaîne de caractères
@@ -65,7 +65,7 @@ __Champ 6: #code_moyen_roulant__
 - Calcul (règle de calcul): aucun
 - Règle: clé primaire de la table "moyen roulant"
 
-__Champ 7: #code_sites__
+__Champ 7 : #code_sites__
 - code: code_sites
 - signification: identifiant unique d'un site
 - type: chaîne de caractères
