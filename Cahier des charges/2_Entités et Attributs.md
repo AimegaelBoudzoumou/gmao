@@ -27,7 +27,7 @@ matricule, nom, prenom, poste, département (MRF ou Expoitation), date de naissa
 agent exploitant, date, heure début, heure fin, kilométrage, avaries, compte-rendu de l'agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie
 
 ## Interventions
-code, date début, date fin, équipement, type de maintenance (préventive ou corrective), compte-rendu
+code, date début, date fin, équipement, type de maintenance (peut être ue entité à part) préventive ou corrective, compte-rendu
 
 ## Site
 code, type (soit "atelier de maintenance" pour la maintenance préventive, soit "centre de dépannage" pour la maintenance corrective), adresse, coordonnées gps, telephone, responsable
