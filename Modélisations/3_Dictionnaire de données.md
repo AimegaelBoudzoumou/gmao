@@ -7,8 +7,8 @@ code, signification, type, longueur, nature, calcul (règle de calcul), Règle
 
 ## Cas de l'entité __interventions__
 
-Rappel du MLD d'un moyen roulant:
-moyens_roulant (code_moyen_roulant, conduite_moyen_roulant, arrivee_moyen_roul, mise_en_service_moyen_roul, depart_moyen_roul, pmp_moyen_roul, #nom_usage)
+Rappel du MLD d'une intervention:
+interventions (code_interventions, date_debut_interventions, date_fin_interventions, type_de_maintenance_interventions, compte_rendu_interventions, #code_moyen_roulant, #code_sites)
 
 Champ 1: code_interventions
 - code: code_interventions
@@ -55,7 +55,7 @@ Champ 5: compte_rendu_interventions
 - Calcul (règle de calcul): aucun
 - Règle: faire un résumé du travail effectué : les points bloquants, les solutions mises en oeuvre
 
-Champ 5: #code_moyen_roulant
+Champ 6: #code_moyen_roulant
 - code: code_moyen_roulant
 - signification: identifiant unique d'un moyen roulant
 - type: chaîne de caractères
@@ -64,7 +64,7 @@ Champ 5: #code_moyen_roulant
 - Calcul (règle de calcul): aucun
 - Règle: clé primaire de la table "moyen roulant"
 
-Champ 5: #code_sites
+Champ 7: #code_sites
 - code: code_sites
 - signification: identifiant unique d'un site
 - type: chaîne de caractères
