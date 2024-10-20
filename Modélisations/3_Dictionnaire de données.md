@@ -11,7 +11,7 @@ Rappel du MLD d'une intervention:
 
 interventions (code_interventions, date_debut_interventions, date_fin_interventions, type_de_maintenance_interventions, compte_rendu_interventions, #code_moyen_roulant, #code_sites)
 
-__Champ 1__: code_interventions
+_**Champ 1**_ : code_interventions
 - code: code_interventions
 - signification: identifiant unique d'une intervention
 - type: chaîne de caractères
@@ -20,7 +20,7 @@ __Champ 1__: code_interventions
 - Calcul (règle de calcul): aucun
 - Règle: valeur générée par le système sur la base d'autres informations : moyen roulant, date, etc.
 
-Champ 2: date_debut_interventions
+__Champ 2__ : date_debut_interventions
 - code: date_debut_interventions
 - signification: date de début prévue pour l'intervention
 - type: date
