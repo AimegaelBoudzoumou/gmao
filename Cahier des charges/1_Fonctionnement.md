@@ -30,9 +30,9 @@ A la fin d'une exploitation, le conducteur renseigne un "rapport d'exploitation"
 
 Un MR doit être maintenu en bon état. Pour ce faire, il fait l'objet de deux types d'__interventions__ : corrective et préventive.
 
-__1/ intervention corrective__ : après une exploitation, l'agent conducteur renseigne dans son rapport d'exploitation, les éventuelles __avaries__. En cas d'avaries/pannes, la table interventions est mise à jour. Cette mise à jour se fait grâce à un _trigger_ qui écoute le champ "avaries" de la table exploitation.
+__1/ intervention corrective__ : après une exploitation, l'agent conducteur renseigne dans son rapport d'exploitation, les éventuelles __avaries__. En cas d'avaries/pannes, la table interventions est mise à jour. Cette mise à jour se fait grâce à un _**trigger**_ qui écoute le champ "avaries" de la table exploitation.
 
-__2/ intervention préventive__ : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive. A l'atteinte du fameux nombre de kilomètres parcourus, la table interventions est mise à jour. Cette mise à jour se fait grâce à un _trigger_ qui écoute le champ "PMP" (pour Prochaine Maintenance Préventive). de la table MR (ou Exploitation : à décider).
+__2/ intervention préventive__ : après un certain kilométrage (15.000 Km dans le cas de métro), chaque MR doit faire l'objet d'une maintenance préventive. A l'atteinte du fameux nombre de kilomètres parcourus, la table interventions est mise à jour. Cette mise à jour se fait grâce à un _**trigger**_ qui écoute le champ "PMP" (pour Prochaine Maintenance Préventive). de la table MR (ou Exploitation : à décider).
 
 Fonctionnellement : le champ MR.PMP (le champ PMP de la table MR) vaut initialement 15.000. Chaque fois que le champ "kilométrage" de la table Exploitation est mis à jour, le contrôle suivant est effectué :
 
