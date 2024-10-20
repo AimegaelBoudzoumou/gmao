@@ -59,3 +59,4 @@ Si on souhaite garder un historique des alertes produits, on doit créer une tab
 - est ce qu'une ligne peut accueillir des matériels différents ?
 - est ce que tout un matériel est affecté uniquement à une seule ligne ?
 - est-il pertinent de créer une table "type_de_maintenance" qui serait reliée aux tables "interventions" et "sites" ?
+- une tâches 'donnée' est concerne plusieurs interventions différentes ou une intervention spécifique ?
