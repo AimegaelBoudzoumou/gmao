@@ -3,7 +3,7 @@ Une explication du MCD se trouve en bas de la page en cours.
 
 _Ce tutoriel de IBM contient des informations détaillées sur la [modélisation des données](https://www.ibm.com/fr-fr/topics/data-modeling)_
 
-![mcd_gmao_v1](https://github.com/user-attachments/assets/93205b95-f030-4609-809d-3a3502204650)
+![mcd_gmao_v1](https://github.com/user-attachments/assets/94c19a11-cca4-47a8-b534-e91cdb42e262)
 
 ## Explication des principales entités du MCD ci-dessus:
 
