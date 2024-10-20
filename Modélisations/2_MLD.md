@@ -2,8 +2,6 @@
 
 ## Principe de fonctionnement du MLD
 
-### Principe de fonctionnement
-
 Le MLD (pour modèle logique de données) est une couche intermédiaire entre le MCD et la base de données.
 
 Les entités et attributs dans le MCD deviennent respectivement des tables et des champs.
