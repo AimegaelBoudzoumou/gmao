@@ -8,7 +8,7 @@ __magasins__ (code_magasins, nom_magasins, adresse_magasins, #code_sites)
 
 __interventions__ (code_interventions, date_debut_interventions, date_fin_interventions, type_de_maintenance_interventions, compte_rendu_interventions, #code_moyen_roulant) 
 
-___sites__ (code_sites, nom_sites, type_sites, adresse_sites, coordonnees_gps_sites, telephone_sites, responsable_sites) 
+__sites__ (code_sites, nom_sites, type_sites, adresse_sites, coordonnees_gps_sites, telephone_sites, responsable_sites) 
 
 __moyens_roulant__ (code_moyen_roulant, conduite_moyen_roulant, arrivee_moyen_roul, mise_en_service_moyen_roul, depart_moyen_roul, pmp_moyen_roul, #nom_usage) 
 
