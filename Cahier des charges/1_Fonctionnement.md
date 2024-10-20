@@ -40,7 +40,7 @@ Si Exploitation.Kilometrage >= MR.PMP alors : les deux actions suivantes sont à
 - le MR est enregistré dans la table "interventions" pour une maintenance préventive.
 - le champ MR.PMP est incrémenté de 15.000 (représentant ainsi le prochaine kilométrage afin de planifier la prochaine maintenance préventive).
 
-Dans la même logique, un _trigger_ similaire peut être mis en place pour planifer le "changement des pneus de métro", qui doit se faire chaque 250.000 Km environ.
+Dans la même logique, un __**trigger**__ similaire peut être mis en place pour planifer le "changement des pneus de métro", qui doit se faire chaque 250.000 Km environ.
 
 
 Dans les deux types d'intervention (préventive ou corrective), le responsable/coordinateur des maintenances décide de planifer une intervention. Il modifie l'état du MR et renseigne ces informations : date de début (la date de fin et le compte-rendu seront renseignés par les techniciens de maintenance), __équipements__ concernés, __site__ (centre de dépannage ou atelier de maintenance), le ou les techniciens en charge de la maintenance, la ou les __tâches__ à réaliser.
@@ -51,7 +51,7 @@ Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoi
 
 Chaque entrée d'un produit augmente la quantité réelle du produit. Chaque sortie (utilisation lors d'une intervention) de produit diminue la quantité réelle du produit.
 
-Il est possible de mettre en place un _trigger_ pour optimiser le stock des produits. Ce _triger_ écoutera le champ "seuil limite" de la table "produits". En fonction du type, gamme et catégorie du produit, si la quatité réelle est inférieur au seuil limite, alors une champ "alerte_produit" de type varchar est mis à _oui_ (ce champ vaut initialement _non_).
+Il est possible de mettre en place un __**trigger**__ pour optimiser le stock des produits. Ce _triger_ écoutera le champ "seuil limite" de la table "produits". En fonction du type, gamme et catégorie du produit, si la quatité réelle est inférieur au seuil limite, alors une champ "alerte_produit" de type varchar est mis à _oui_ (ce champ vaut initialement _non_).
 
 Si on souhaite garder un historique des alertes produits, on doit créer une table alerte_produits associée à la table produit. Les cardinalités max de l'association vaudront N,N
 
