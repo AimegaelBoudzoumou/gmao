@@ -20,7 +20,7 @@ __Champ 1 : code_interventions__
 - Calcul (règle de calcul): aucun
 - Règle: valeur générée par le système sur la base d'autres informations : moyen roulant, date, etc.
 
-__Champ 2__ : date_debut_interventions
+__Champ 2 : date_debut_interventions__
 - code: date_debut_interventions
 - signification: date de début prévue pour l'intervention
 - type: date
@@ -29,7 +29,7 @@ __Champ 2__ : date_debut_interventions
 - Calcul (règle de calcul): aucun
 - Règle: date fixée par le/la responsable de la maintenance
 
-Champ 3: date_fin_interventions
+__Champ 3: date_fin_interventions__
 - code: date_fin_interventions
 - signification: date de fin prévue pour l'intervention
 - type: date
@@ -38,7 +38,7 @@ Champ 3: date_fin_interventions
 - Calcul (règle de calcul): aucun
 - Règle: date non fixée à l'avance
 
-Champ 4: type_de_maintenance_interventions
+__Champ 4: type_de_maintenance_interventions__
 - code: type_de_maintenance_interventions
 - signification: type de maintenance à réaliser : soit préventive, soit corrective
 - type: chaîne de caractères
@@ -47,7 +47,7 @@ Champ 4: type_de_maintenance_interventions
 - Calcul (règle de calcul): aucun
 - Règle: la maintenance préventive est effectuée à des intervalles de temps connus et régulier, la maintenance corrective est réalisée à l'apparition d'une avarie sur le moyen roulant
 
-Champ 5: compte_rendu_interventions
+__Champ 5: compte_rendu_interventions__
 - code:  compte_rendu_interventions
 - signification: sorte de reour d'expérience sur l'intervention effectuée
 - type: chaîne de caractères
@@ -56,7 +56,7 @@ Champ 5: compte_rendu_interventions
 - Calcul (règle de calcul): aucun
 - Règle: faire un résumé du travail effectué : les points bloquants, les solutions mises en oeuvre
 
-Champ 6: #code_moyen_roulant
+__Champ 6: #code_moyen_roulant__
 - code: code_moyen_roulant
 - signification: identifiant unique d'un moyen roulant
 - type: chaîne de caractères
@@ -65,7 +65,7 @@ Champ 6: #code_moyen_roulant
 - Calcul (règle de calcul): aucun
 - Règle: clé primaire de la table "moyen roulant"
 
-Champ 7: #code_sites
+__Champ 7: #code_sites__
 - code: code_sites
 - signification: identifiant unique d'un site
 - type: chaîne de caractères
