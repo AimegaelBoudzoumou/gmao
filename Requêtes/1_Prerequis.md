@@ -2,6 +2,8 @@
 
 Se trouvent ici les requêtes relatives à la création des tables et à l'insertion de quelque données dans ces tables.
 
+__En cours de rédaction : merci de votre compréhension__
+
 ```sql
 DROP TABLE agents;
 DROP TABLE produits;
