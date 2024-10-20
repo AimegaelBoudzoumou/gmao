@@ -15,13 +15,13 @@ l'élément A reçoit la clé primaire de l'élément B. Cette clé primaire se 
 
 ### Voici les tables découlant du MCD:
 
-__agents__ (id_Agent, matricule_Agent, nom_Agent, prenom_Agent, poste_Agent, departement_Agent, date_naissance_Agent, téléphone_Agent)
+__agents__ (matricule_Agent, nom_Agent, prenom_Agent, poste_Agent, departement_Agent, date_naissance_Agent, téléphone_Agent) 
 
-__produits__ (id_produits, code_produits, nom_produits, description_produits, type_produits, gamme_produits, categorie_produits, unite_de_comptage_produits, qtite_reelle_produits, seuil_alerte_produits, date_premier_enregistrement_produits, alerte_produit_produits, #code_magasins) 
+__produits__ (code_produits, nom_produits, description_produits, type_produits, gamme_produits, categorie_produits, unite_de_comptage_produits, qtite_reelle_produits, seuil_alerte_produits, date_premier_enregistrement_produits, alerte_produit_produits, #code_magasins) 
 
 __magasins__ (code_magasins, nom_magasins, adresse_magasins, #code_sites) 
 
-__interventions__ (code_interventions, date_debut_interventions, date_fin_interventions, type_de_maintenance_interventions, compte_rendu_interventions, #code_moyen_roulant) 
+__interventions__ (code_interventions, date_debut_interventions, date_fin_interventions, type_de_maintenance_interventions, compte_rendu_interventions, #code_moyen_roulant, #code_sites) 
 
 __sites__ (code_sites, nom_sites, type_sites, adresse_sites, coordonnees_gps_sites, telephone_sites, responsable_sites) 
 
@@ -33,18 +33,18 @@ __usage__ (nom_usage)
 
 __statuts__ (nom_statuts) 
 
-__taches__ (code_Entite_10, nom_Entite_10) 
+__taches__ (code_taches, nom_taches) 
 
-__produits_inseres__ (id_Agent, id_produits, date_insertion_inserer, quantite_inseree_inserer) 
+__produits_inseres__ (matricule_Agent, code_produits, date_produits_inseres, quantite_produits_inseres) 
 
-__exploitation__ (id_Agent, code_moyen_roulant, date_exploitation_exploitation) 
+__exploitation__ (matricule_Agent, code_moyen_roulant, date_exploitation) 
 
-__produits_utilises__ (id_produits, code_interventions, date_utilisation_utiliser, quantite_utilisee_utiliser) 
+__produits_utilises__ (code_produits, code_interventions, date_produits_utilises, quantite_produits_utilises) 
 
-__bon_de_missions__ (id_Agent, code_interventions, date_affectation_bon_de_missions) 
+__bon_de_missions__ (matricule_Agent, code_interventions, date_bon_de_missions) 
 
-__taches_effectuees__ (code_interventions, code_Entite_10) 
+__taches_effectuees__ (code_interventions, code_taches) 
 
-__concerner__ (code_interventions, code_equipements, date_equipement_intervention_concerner) 
+__concerner__ (code_interventions, code_equipements, date_concerner) 
 
-__historique_statuts__ (code_moyen_roulant, nom_statuts, date_historique_statuts)
+__historique_statuts__ (code_moyen_roulant, nom_statuts, date_historique_statuts) 
