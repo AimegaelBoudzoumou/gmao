@@ -1,7 +1,7 @@
 - prérequis : création des tables
 - prérequis : insertions des données
 - un _trigger_ écoute le champ "panne" de la table Exploitation et la table __Interventions__ est mise à jour
-- afficher le nombre d'intervention par site : afin d'affecter une intervention au site le moins surchargé et le plus près du lieu ou se trouve le MR à l'instant t
+- afficher le nombre d'intervention par site : afin d'affecter une intervention au site le moins surchargé et le plus près du lieu ou se trouve le MR à l'instant _t_
 - un trigger sur le seuil limite d'un produit, en fonction de certains critères : gamme, catégorie, etc.
 - liste des avaries sur un MR
 - liste des personnes étant intervenues lors d'une interventions
