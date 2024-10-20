@@ -1,5 +1,5 @@
 # Dictionnaire de données
-Le dictionnaire de données apporte des informations détaillées sur les champs des tables.
+Le __dictionnaire de données__ apporte des informations détaillées sur les champs des tables.
 
 Il est question pour chaque champ de table, d'expliquer les éléments suivants: 
 
