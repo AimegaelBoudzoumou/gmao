@@ -55,6 +55,7 @@ Il est possible de mettre en place un __**trigger**__ pour optimiser le stock de
 
 Si on souhaite garder un historique des alertes produits, on doit créer une table (par exemple __alerte_produits__) associée à la table produit. Les cardinalités max de l'association vaudront N,N
 
-## __D/ Quelques questions à éclaircir__ :
+## __D/ Quelques points à éclaircir__ :
 - est ce qu'une ligne peut accueillir des matériels différents ?
 - est ce que tout un matériel est affecté uniquement à une seule ligne ?
+- est-il pertinent de créer une table "type_de_maintenance" qui serait reliée aux tables "interventions" et "sites" ?
