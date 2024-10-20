@@ -21,7 +21,7 @@ numéro
 code, nom, MR associé
 
 ## Agent/Employé
-matricule, nom, prenom, poste, département (MRF ou Expoitation), date de naissance, téléphone
+matricule, nom, prenom, poste, département (MRF ou Expoitation; peut faire l'objet d'une entité à part), date de naissance, téléphone
 
 ## Exploitation
 agent exploitant, date, heure début, heure fin, kilométrage, avaries, compte-rendu de l'agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie
