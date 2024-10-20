@@ -18,25 +18,25 @@ code, constructeur, composition, écartement des roues, longueur, intercirculati
 numéro
 
 ## Equipement
-nom, MR associé
+code, nom, MR associé
 
 ## Agent/Employé
-nom, prenom, poste, département (MRF ou Expoitation), date de naissance, téléphone
+matricule, nom, prenom, poste, département (MRF ou Expoitation), date de naissance, téléphone
 
 ## Exploitation
 agent exploitant, date, heure début, heure fin, kilométrage, avaries, compte-rendu de l'agent exploitant, lieu où la l'avariee est constatée, niveau de gravité de l'avarie
 
 ## Interventions
-date début, date fin, équipement, type de maintenance (préventive ou corrective), compte-rendu
+code, date début, date fin, équipement, type de maintenance (préventive ou corrective), compte-rendu
 
 ## Site
-type (soit "atelier de maintenance" pour la maintenance préventive, soit "centre de dépannage" pour la maintenance corrective), adresse, coordonnées géographiques, responsable
+code, type (soit "atelier de maintenance" pour la maintenance préventive, soit "centre de dépannage" pour la maintenance corrective), adresse, coordonnées géographiques, responsable
 
 ## Tâches
-nom, intervention concernées
+code, nom, intervention concernées
 
 ## Produits
-nom, descriptif, type de produit, unité de comptage, quantité réelle, seuil limite, gamme, catégorie, date du premier enregistrement, alerte_produit
+code, nom, descriptif, type de produit, unité de comptage, quantité réelle, seuil limite, gamme, catégorie, date du premier enregistrement, alerte_produit
 
 ## Magasins
-nom, adresse
+code, nom, adresse
