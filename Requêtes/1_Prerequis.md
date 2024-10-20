@@ -5,7 +5,7 @@ Se trouvent ici les requêtes relatives à la création des tables et à l'inser
 __En cours de rédaction : merci de votre compréhension__
 
 ```sql
-DROP TABLE agents;
+/*DROP TABLE agents;
 DROP TABLE produits;
 DROP TABLE magasins;
 DROP TABLE interventions;
@@ -16,6 +16,7 @@ DROP TABLE usage;
 DROP TABLE statuts;
 DROP TABLE taches;
 DROP TABLE bon_de_missions;
+*/
 
 
 CREATE TABLE agents (matricule_Agent VARCHAR2(250) NOT NULL,
@@ -97,9 +98,7 @@ CREATE TABLE bon_de_missions (
     date_bon_de_missions DATE,
     matricule_Agent VARCHAR2(250),
     code_interventions VARCHAR2(250),
-    PRIMARY KEY (matricule_Agent, code_interventions)
-    --CONSTRAINT FK_bon_de_missions_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent),
-    --CONSTRAINT FK_bon_de_missions_code_interventions FOREIGN KEY (code_interventions) REFERENCES interventions (code_interventions)   
+    PRIMARY KEY (matricule_Agent, code_interventions)  
 );
 
 ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
