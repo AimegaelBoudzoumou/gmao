@@ -13,7 +13,7 @@ Le MLD (pour modèle logique de données) est une couche intermédiaire entre le
 l'élément A reçoit la clé primaire de l'élément B. Cette clé primaire se transforme en clé étrangère dans A.
 
 
-### Voici les tables découlant du MCD:
+### Voici les tables et leurs champs, découlant du MCD:
 
 __agents__ (matricule_Agent, nom_Agent, prenom_Agent, poste_Agent, departement_Agent, date_naissance_Agent, téléphone_Agent) 
 
