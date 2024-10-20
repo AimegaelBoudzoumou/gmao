@@ -4,11 +4,11 @@
 
 Le MLD (pour modèle logique de données) est une couche intermédiaire entre le MCD et la base de données.
 
-Les entités et attributs dans le MCD deviennent respectivement des tables et des champs.
+- Les entités et attributs dans le MCD deviennent respectivement des tables et des champs.
 
-Les associations ayant la cardinalité max N,N se transforment en tables.
+- Les associations ayant la cardinalité max N,N se transforment en tables.
 
-Lorsqu'une association reliant deux éléments A et B, possède la cardinalité max 1,N (soit 1 pour A et N pour B) : 
+ - Lorsqu'une association reliant deux éléments A et B, possède la cardinalité max 1,N (soit 1 pour A et N pour B) : 
 
 l'élément A reçoit la clé primaire de l'élément B. Cette clé primaire se transforme en clé étrangère dans A.
 
