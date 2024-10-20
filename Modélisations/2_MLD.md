@@ -1,5 +1,7 @@
 # MLD
 
+## Principe de fonctionnement du MLD
+
 __agents__ (id_Agent, matricule_Agent, nom_Agent, prenom_Agent, poste_Agent, departement_Agent, date_naissance_Agent, téléphone_Agent)
 
 __produits__ (id_produits, code_produits, nom_produits, description_produits, type_produits, gamme_produits, categorie_produits, unite_de_comptage_produits, qtite_reelle_produits, seuil_alerte_produits, date_premier_enregistrement_produits, alerte_produit_produits, #code_magasins) 
