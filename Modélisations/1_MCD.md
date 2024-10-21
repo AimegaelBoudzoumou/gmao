@@ -5,7 +5,7 @@ Une explication du MCD se trouve en bas de la page en cours.
 
 Outil utilisé: logiciel __AnalyseSI__ en environnement __Ubuntu 18.04.5 LTS__
 
-![mcd_gmao_v1](https://github.com/user-attachments/assets/94c19a11-cca4-47a8-b534-e91cdb42e262)
+![mcd_gmao_v1](https://github.com/user-attachments/assets/9a3a7ef2-a165-4cea-ada7-ffaf1a2ea1c7)
 
 ## Explication des principales entités du MCD ci-dessus:
 
