@@ -47,4 +47,6 @@ __taches_effectuees__ (code_interventions, code_taches)
 
 __concerner__ (code_interventions, code_equipements, date_concerner) 
 
-__historique_statuts__ (code_moyen_roulant, nom_statuts, date_historique_statuts) 
+__historique_statuts__ (code_moyen_roulant, nom_statuts, date_historique_statuts)
+
+### Recherche à faire : soulignement de la clé primaire dans le MLD via analyseSI
