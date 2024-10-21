@@ -1,7 +1,9 @@
 # MCD
+__Note__ : Ce tutoriel de IBM contient des informations détaillées sur la [modélisation des données](https://www.ibm.com/fr-fr/topics/data-modeling)
+
 Une explication du MCD se trouve en bas de la page en cours.
 
-_Ce tutoriel de IBM contient des informations détaillées sur la [modélisation des données](https://www.ibm.com/fr-fr/topics/data-modeling)_
+Outil utilisé: logiciel AnalyseSI en envirionnement Ubuntu 18.04.5 LTS
 
 ![mcd_gmao_v1](https://github.com/user-attachments/assets/94c19a11-cca4-47a8-b534-e91cdb42e262)
 
