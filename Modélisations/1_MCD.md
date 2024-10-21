@@ -39,6 +39,6 @@ Un site:
 - peut accueillir plusieurs interventions
 - peut accueillir aucun ou plusieurs magasins
 
-
+__Note__ : il est possible d'ahouter une entité "materiel" qui serait reliée à l'entité "moyen_roulant"; via une association "appartenir" ayant les cardinalités 1,1 (pour moyen_roulant) et 0,N ou 1,N (pour materiel).
 
 
