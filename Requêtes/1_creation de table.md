@@ -133,10 +133,9 @@ PRIMARY KEY (matricule_Agent,
  code_produits));
 
 
-CREATE TABLE exploitation (date_exploitation DATE,
+CREATE TABLE exploitation (date_exploitation DATE, kilometrage NUMBER,
 PRIMARY KEY (matricule_Agent,
  code_moyen_roulant));
-
 
 CREATE TABLE produits_utilises (date_produits_utilises DATE,
 quantite_produits_utilises INTEGER,
