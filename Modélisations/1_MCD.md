@@ -1,7 +1,7 @@
 # MCD
 __Note__ : Ce tutoriel de IBM contient des informations détaillées sur la [modélisation des données](https://www.ibm.com/fr-fr/topics/data-modeling)
 
-Une explication du MCD (modèle conceptuel de données) se trouve en bas de la page en cours.
+Une explication du MCD (Modèle Conceptuel de Données) se trouve en bas de la page en cours.
 
 Outil utilisé: logiciel __AnalyseSI__ en environnement __Ubuntu 18.04.5 LTS__
 
