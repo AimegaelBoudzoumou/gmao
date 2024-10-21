@@ -37,7 +37,7 @@ __taches__ (code_taches, nom_taches)
 
 __produits_inseres__ (matricule_Agent, code_produits, date_produits_inseres, quantite_produits_inseres) 
 
-__exploitation__ (matricule_Agent, code_moyen_roulant, date_exploitation) 
+__exploitation__ (matricule_Agent, code_moyen_roulant, date_exploitation, kilometrage) 
 
 __produits_utilises__ (code_produits, code_interventions, date_produits_utilises, quantite_produits_utilises) 
 
