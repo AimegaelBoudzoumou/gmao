@@ -179,6 +179,8 @@ CREATE TABLE produits_utilises (
 );
 
 /***************************      ALTER TABLE : ADD CONSTRAINT    ***************************/
+/********************      Attention à l'ordre d"ajout des constraintes   ****************************/
+
 
 ALTER TABLE produits ADD CONSTRAINT FK_produits_code_magasins FOREIGN KEY (code_magasins) REFERENCES magasins (code_magasins);
 ALTER TABLE magasins ADD CONSTRAINT FK_magasins_code_sites FOREIGN KEY (code_sites) REFERENCES sites (code_sites);
