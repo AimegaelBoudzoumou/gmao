@@ -9,10 +9,6 @@ __En cours de rédaction : merci de votre compréhension__
 ```sql
 /*
 Faire attention à l'ordre de suppression des tables, afin d'éviter l'erreur suivante :
-
-More Details: https://docs.oracle.com/error-help/db/ora-00955
-ORA-00955: name is already used by an existing object
-
 */
 
 DROP TABLE taches_effectuees;
