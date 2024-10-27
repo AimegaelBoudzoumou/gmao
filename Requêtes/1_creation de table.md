@@ -148,7 +148,7 @@ PRIMARY KEY (code_produits,
  code_interventions)
 );
 
-/***************************      ALTER TABLE      ***************************/
+/***************************      ALTER TABLE : ADD CONSTRAINT    ***************************/
 
 ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
 ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_code_interventions FOREIGN KEY (code_interventions) REFERENCES interventions (code_interventions);
