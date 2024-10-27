@@ -28,13 +28,9 @@ DROP TABLE magasins;
 DROP TABLE sites;
 DROP TABLE moyens_roulant;
 DROP TABLE usage;
-
-------------------------------------
   
-/********************                CREATE TABLE	                  **************************/
+/********************                CREATE TABLE	                    ****************************/
 /********************    Attention à l'ordre de création des tables   ****************************/
-
-
 
 CREATE TABLE agents (
     matricule_Agent VARCHAR2(250) NOT NULL,
