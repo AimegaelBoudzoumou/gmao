@@ -58,6 +58,7 @@ CREATE TABLE produits (
     seuil_alerte_produits INTEGER,
     date_premier_enregistrement_produits DATE,
     alerte_produit_produits VARCHAR2(250),
+    --code_magasins VARCHAR2(250),
     PRIMARY KEY (code_produits)
 );
 
@@ -74,8 +75,8 @@ CREATE TABLE interventions (
     date_fin_interventions DATE,
     type_de_maintenance_interventions VARCHAR2(250),
     compte_rendu_interventions VARCHAR2(255),
-    -- code_moyen_roulant
-    -- code_site
+    code_moyen_roulant VARCHAR2(250),
+    code_site VARCHAR2(250),
     PRIMARY KEY (code_interventions)
 );
 
