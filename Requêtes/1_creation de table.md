@@ -96,7 +96,7 @@ nom_taches VARCHAR2(250),
 PRIMARY KEY (code_taches));
 
 
-/*************************      Associations devenant des entités      *****************************/
+/*************************      Associations devenant des entités/Tables      *****************************/
 
 CREATE TABLE bon_de_missions (
     date_bon_de_missions DATE,
