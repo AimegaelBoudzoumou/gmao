@@ -1,4 +1,4 @@
-# Prérequis
+# CREATE TABLE
 
 Se trouvent ici les requêtes relatives à la création des tables.
 
