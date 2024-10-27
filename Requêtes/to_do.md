@@ -8,3 +8,8 @@
 - Afficher les prochaines interventions sur un moyen
 - Liste des produits en alerte
 - Afficher le nombre de fois qu'un agent a été affecté à un MR donnée
+
+Présentation de chaque besoin métier
+# Titre du Besoin métier : expliquer le pourquoi du besoin
+# Solution fonctionnelle : expliquer la solution à mettre en oeuvre
+# Implémentation de la solution fonctionnelle : c'est le code SQL (ou PL/SQL)
