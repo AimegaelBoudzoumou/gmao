@@ -7,9 +7,7 @@ _Note_ : ce code SQL a été testé dans un environnement __Live SQL__
 __En cours de rédaction : merci de votre compréhension__
 
 ```sql
-/*
-Faire attention à l'ordre de suppression des tables, afin d'éviter l'erreur suivante :
-*/
+/********************    Attention à l'ordre de suppression des tables   ****************************/
 
 DROP TABLE taches_effectuees;
 DROP TABLE taches;
