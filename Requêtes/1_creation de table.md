@@ -7,18 +7,33 @@ _Note_ : ce code SQL a été testé dans un environnement __Live SQL__
 __En cours de rédaction : merci de votre compréhension__
 
 ```sql
-/*DROP TABLE agents;
+/*
+Revoir l'ordre de suppression des tables, afin d'éviter l'erreur suivante :
+
+More Details: https://docs.oracle.com/error-help/db/ora-00955
+ORA-00955: name is already used by an existing object
+
+*/
+DROP TABLE taches_effectuees;
+DROP TABLE taches;
+DROP TABLE concerner;
+DROP TABLE equipements;
+DROP TABLE exploitation;
+DROP TABLE historique_statuts;
+DROP TABLE statuts;
+DROP TABLE interventions;
+DROP TABLE produits_inseres;
+DROP TABLE bon_de_missions;
+DROP TABLE agents;
+DROP TABLE produits_utilises;
 DROP TABLE produits;
 DROP TABLE magasins;
-DROP TABLE interventions;
 DROP TABLE sites;
 DROP TABLE moyens_roulant;
-DROP TABLE equipements;
 DROP TABLE usage;
-DROP TABLE statuts;
-DROP TABLE taches;
-DROP TABLE bon_de_missions;
-*/
+------------------------------------
+
+/********************  CREATE TABLE	****************************/
 
 
 CREATE TABLE agents (matricule_Agent VARCHAR2(250) NOT NULL,
