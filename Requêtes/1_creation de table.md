@@ -11,26 +11,26 @@ __En cours de rédaction : merci de votre compréhension__
 
 ----------------------------------- suppression des associations/entités
 
-DROP TABLE taches_effectuees;
-DROP TABLE produits_utilises;
-DROP TABLE concerner;
-DROP TABLE produits_inseres;
-DROP TABLE bon_de_missions;
-DROP TABLE exploitation;
-DROP TABLE historique_statuts;
+DROP TABLE taches_effectuees CASCADE CONSTRAINTS;
+DROP TABLE produits_utilises CASCADE CONSTRAINTS;
+DROP TABLE concerner CASCADE CONSTRAINTS;
+DROP TABLE produits_inseres CASCADE CONSTRAINTS;
+DROP TABLE bon_de_missions CASCADE CONSTRAINTS;
+DROP TABLE exploitation CASCADE CONSTRAINTS;
+DROP TABLE historique_statuts CASCADE CONSTRAINTS;
 
 ----------------------------------- suppression des tables/entités
 
-DROP TABLE agents;
-DROP TABLE equipements;
-DROP TABLE interventions;
-DROP TABLE moyens_roulant;
-DROP TABLE usages;
-DROP TABLE magasins;
-DROP TABLE sites;
-DROP TABLE produits;
-DROP TABLE taches;
-DROP TABLE statuts;
+DROP TABLE agents CASCADE CONSTRAINTS;
+DROP TABLE equipements CASCADE CONSTRAINTS;
+DROP TABLE interventions CASCADE CONSTRAINTS;
+DROP TABLE moyens_roulant CASCADE CONSTRAINTS;
+DROP TABLE usages CASCADE CONSTRAINTS;
+DROP TABLE magasins CASCADE CONSTRAINTS;
+DROP TABLE sites CASCADE CONSTRAINTS;
+DROP TABLE produits CASCADE CONSTRAINTS;
+DROP TABLE taches CASCADE CONSTRAINTS;
+DROP TABLE statuts CASCADE CONSTRAINTS;
 
 /********************                CREATE TABLE	                    ****************************/
 /********************    Attention à l'ordre de création des tables     ****************************/
@@ -58,7 +58,7 @@ CREATE TABLE produits (
     seuil_alerte_produits INTEGER,
     date_premier_enregistrement_produits DATE,
     alerte_produit_produits VARCHAR2(250),
-    code_magasins VARCHAR2(250), -- 
+    code_magasins VARCHAR2(250),
     PRIMARY KEY (code_produits)
 );
 
