@@ -31,7 +31,6 @@ téléphone_Agent NUMBER,
 PRIMARY KEY (matricule_Agent));
 
 
-
 CREATE TABLE produits (code_produits VARCHAR2(250) NOT NULL,
 nom_produits VARCHAR2(250),
 description_produits VARCHAR2(250),
@@ -79,7 +78,6 @@ pmp_moyen_roul DATE,
 PRIMARY KEY (code_moyen_roulant));
 
 
-
 CREATE TABLE equipements (code_equipements VARCHAR2(250) NOT NULL,
 nom_equipements VARCHAR2(250),
 PRIMARY KEY (code_equipements));
@@ -87,6 +85,7 @@ PRIMARY KEY (code_equipements));
 
 CREATE TABLE usage (nom_usage VARCHAR2(250) NOT NULL,
 PRIMARY KEY (nom_usage));
+
 
 CREATE TABLE statuts (nom_statuts VARCHAR2(250) NOT NULL,
 PRIMARY KEY (nom_statuts));
@@ -96,6 +95,9 @@ CREATE TABLE taches (code_taches VARCHAR2(250) NOT NULL,
 nom_taches VARCHAR2(250),
 PRIMARY KEY (code_taches));
 
+
+/*************************      Associations devenant des entités      *****************************/
+
 CREATE TABLE bon_de_missions (
     date_bon_de_missions DATE,
     matricule_Agent VARCHAR2(250),
@@ -103,49 +105,53 @@ CREATE TABLE bon_de_missions (
     PRIMARY KEY (matricule_Agent, code_interventions)  
 );
 
-ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
-ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_code_interventions FOREIGN KEY (code_interventions) REFERENCES interventions (code_interventions);
+CREATE TABLE exploitation (date_exploitation DATE, kilometrage NUMBER,
+matricule_Agent VARCHAR2(250),
+code_moyen_roulant VARCHAR2(250),
+PRIMARY KEY (matricule_Agent, code_moyen_roulant)
+);
 
--- associations devenant des entités :
-/*
-CREATE TABLE bon_de_missions (date_bon_de_missions DATE,
-PRIMARY KEY (matricule_Agent,
- code_interventions));
-
-
-CREATE TABLE taches_effectuees (PRIMARY KEY (code_interventions,
- code_taches));
-
-
+CREATE TABLE taches_effectuees (
+code_interventions VARCHAR2(250),
+code_taches VARCHAR2(250),
+PRIMARY KEY (code_interventions,
+ code_taches)
+);
 
 CREATE TABLE concerner (date_concerner DATE,
+code_interventions VARCHAR2(250),
+code_equipements VARCHAR2(250),
 PRIMARY KEY (code_interventions,
- code_equipements));
-
+ code_equipements)
+);
 
 CREATE TABLE historique_statuts (date_historique_statuts DATE,
+code_moyen_roulant VARCHAR2(250),
+nom_statuts VARCHAR2(250),
 PRIMARY KEY (code_moyen_roulant,
- nom_statuts));
+ nom_statuts)
+);
 
 CREATE TABLE produits_inseres (date_produits_inseres DATE,
 quantite_produits_inseres INTEGER,
+matricule_Agent VARCHAR2(250),
+code_produits VARCHAR2(250),
 PRIMARY KEY (matricule_Agent,
- code_produits));
-
-
-CREATE TABLE exploitation (date_exploitation DATE, kilometrage NUMBER,
-PRIMARY KEY (matricule_Agent,
- code_moyen_roulant));
+ code_produits)
+);
 
 CREATE TABLE produits_utilises (date_produits_utilises DATE,
 quantite_produits_utilises INTEGER,
+code_produits VARCHAR2(250),
+code_interventions VARCHAR2(250),
 PRIMARY KEY (code_produits,
- code_interventions));
+ code_interventions)
+);
 
-*/
+/***************************      ALTER TABLE      ***************************/
 
--- adding constraint
-/*
+ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
+ALTER TABLE bon_de_missions ADD CONSTRAINT FK_bon_de_missions_code_interventions FOREIGN KEY (code_interventions) REFERENCES interventions (code_interventions);
 ALTER TABLE produits ADD CONSTRAINT FK_produits_code_magasins FOREIGN KEY (code_magasins) REFERENCES magasins (code_magasins);
 ALTER TABLE magasins ADD CONSTRAINT FK_magasins_code_sites FOREIGN KEY (code_sites) REFERENCES sites (code_sites);
 ALTER TABLE interventions ADD CONSTRAINT FK_interventions_code_moyen_roulant FOREIGN KEY (code_moyen_roulant) REFERENCES moyens_roulant (code_moyen_roulant);
@@ -166,5 +172,4 @@ ALTER TABLE concerner ADD CONSTRAINT FK_concerner_code_interventions FOREIGN KEY
 ALTER TABLE concerner ADD CONSTRAINT FK_concerner_code_equipements FOREIGN KEY (code_equipements) REFERENCES equipements (code_equipements);
 ALTER TABLE historique_statuts ADD CONSTRAINT FK_historique_statuts_code_moyen_roulant FOREIGN KEY (code_moyen_roulant) REFERENCES moyens_roulant (code_moyen_roulant);
 ALTER TABLE historique_statuts ADD CONSTRAINT FK_historique_statuts_nom_statuts FOREIGN KEY (nom_statuts) REFERENCES statuts (nom_statuts);
-*/
 ```
