@@ -74,6 +74,8 @@ CREATE TABLE interventions (
     date_fin_interventions DATE,
     type_de_maintenance_interventions VARCHAR2(250),
     compte_rendu_interventions VARCHAR2(255),
+    -- code_moyen_roulant
+    -- code_site
     PRIMARY KEY (code_interventions)
 );
 
@@ -95,12 +97,14 @@ CREATE TABLE moyens_roulant (
     mise_en_service_moyen_roul DATE,
     depart_moyen_roul DATE,
     pmp_moyen_roul DATE,
+    nom_usages VARCHAR2(250),
     PRIMARY KEY (code_moyen_roulant)
 );
 
 CREATE TABLE equipements (
     code_equipements VARCHAR2(250) NOT NULL,
     nom_equipements VARCHAR2(250),
+    code_moyen_roulant VARCHAR2(250),
     PRIMARY KEY (code_equipements)
 );
 
