@@ -5,7 +5,7 @@ Il est question pour chaque champ de table, d'expliquer les éléments suivants:
 
 code, signification, type, longueur, nature, calcul (règle de calcul), Règle
 
-## Cas de l'entité __**interventions**__
+## Cas de l'entité __*interventions*__
 
 Rappel du MLD d'une intervention:
 
