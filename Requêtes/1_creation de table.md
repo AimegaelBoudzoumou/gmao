@@ -176,12 +176,14 @@ CREATE TABLE historique_statuts (
 /***************************      ALTER TABLE : ADD CONSTRAINT    ***************************/
 /********************      Attention à l'ordre d"ajout des constraintes   ****************************/
 
+------- errors
 ALTER TABLE produits ADD CONSTRAINT FK_produits_code_magasins FOREIGN KEY (code_magasins) REFERENCES magasins (code_magasins);
 ALTER TABLE magasins ADD CONSTRAINT FK_magasins_code_sites FOREIGN KEY (code_sites) REFERENCES sites (code_sites);
 ALTER TABLE interventions ADD CONSTRAINT FK_interventions_code_moyen_roulant FOREIGN KEY (code_moyen_roulant) REFERENCES moyens_roulant (code_moyen_roulant);
 ALTER TABLE interventions ADD CONSTRAINT FK_interventions_code_sites FOREIGN KEY (code_sites) REFERENCES sites (code_sites);
 ALTER TABLE moyens_roulant ADD CONSTRAINT FK_moyens_roulant_nom_usages FOREIGN KEY (nom_usages) REFERENCES usages (nom_usages);
 ALTER TABLE equipements ADD CONSTRAINT FK_equipements_code_moyen_roulant FOREIGN KEY (code_moyen_roulant) REFERENCES moyens_roulant (code_moyen_roulant);
+-------
 ALTER TABLE produits_inseres ADD CONSTRAINT FK_produits_inseres_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
 ALTER TABLE produits_inseres ADD CONSTRAINT FK_produits_inseres_code_produits FOREIGN KEY (code_produits) REFERENCES produits (code_produits);
 ALTER TABLE exploitation ADD CONSTRAINT FK_exploitation_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
