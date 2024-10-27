@@ -8,12 +8,14 @@ __En cours de rédaction : merci de votre compréhension__
 
 ```sql
 /*
-Revoir l'ordre de suppression des tables, afin d'éviter l'erreur suivante :
+Faire attention à l'ordre de suppression des tables, afin d'éviter l'erreur suivante :
 
 More Details: https://docs.oracle.com/error-help/db/ora-00955
 ORA-00955: name is already used by an existing object
 
 */
+
+/*
 DROP TABLE taches_effectuees;
 DROP TABLE taches;
 DROP TABLE concerner;
@@ -22,15 +24,16 @@ DROP TABLE exploitation;
 DROP TABLE historique_statuts;
 DROP TABLE statuts;
 DROP TABLE interventions;
-DROP TABLE produits_inseres;
 DROP TABLE bon_de_missions;
 DROP TABLE agents;
 DROP TABLE produits_utilises;
 DROP TABLE produits;
+DROP TABLE produits_inseres;
 DROP TABLE magasins;
 DROP TABLE sites;
 DROP TABLE moyens_roulant;
 DROP TABLE usage;
+*/
 ------------------------------------
 
 /********************  CREATE TABLE	****************************/
