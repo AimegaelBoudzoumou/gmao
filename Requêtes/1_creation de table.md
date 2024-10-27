@@ -9,26 +9,31 @@ __En cours de rédaction : merci de votre compréhension__
 ```sql
 /********************    Attention à l'ordre de suppression des tables   ****************************/
 
+----------------------------------- suppression des associations/entités
+
 DROP TABLE taches_effectuees;
-DROP TABLE taches;
+DROP TABLE produits_utilises;
 DROP TABLE concerner;
-DROP TABLE equipements;
+DROP TABLE produits_inseres;
+DROP TABLE bon_de_missions;
 DROP TABLE exploitation;
 DROP TABLE historique_statuts;
-DROP TABLE statuts;
-DROP TABLE interventions;
-DROP TABLE bon_de_missions;
+
+----------------------------------- suppression des tables/entités
+
 DROP TABLE agents;
-DROP TABLE produits_utilises;
-DROP TABLE produits;
-DROP TABLE produits_inseres;
+DROP TABLE equipements;
+DROP TABLE interventions;
+DROP TABLE moyens_roulant;
+DROP TABLE usages;
 DROP TABLE magasins;
 DROP TABLE sites;
-DROP TABLE moyens_roulant;
-DROP TABLE usage;
-  
+DROP TABLE produits;
+DROP TABLE taches;
+DROP TABLE statuts;
+
 /********************                CREATE TABLE	                    ****************************/
-/********************    Attention à l'ordre de création des tables   ****************************/
+/********************    Attention à l'ordre de création des tables     ****************************/
 
 CREATE TABLE agents (
     matricule_Agent VARCHAR2(250) NOT NULL,
@@ -40,7 +45,6 @@ CREATE TABLE agents (
     téléphone_Agent NUMBER,
     PRIMARY KEY (matricule_Agent)
 );
-
 
 CREATE TABLE produits (
     code_produits VARCHAR2(250) NOT NULL,
@@ -57,14 +61,12 @@ CREATE TABLE produits (
     PRIMARY KEY (code_produits)
 );
 
-
 CREATE TABLE magasins (
     code_magasins VARCHAR2(250) NOT NULL,
     nom_magasins VARCHAR2(250),
     adresse_magasins VARCHAR2(255),
     PRIMARY KEY (code_magasins)
 );
-
 
 CREATE TABLE interventions (
     code_interventions VARCHAR2(250) NOT NULL,
@@ -74,7 +76,6 @@ CREATE TABLE interventions (
     compte_rendu_interventions VARCHAR2(255),
     PRIMARY KEY (code_interventions)
 );
-
 
 CREATE TABLE sites (
     code_sites VARCHAR2(250) NOT NULL,
@@ -87,7 +88,6 @@ CREATE TABLE sites (
     PRIMARY KEY (code_sites)
 );
 
-
 CREATE TABLE moyens_roulant (
     code_moyen_roulant VARCHAR2(250) NOT NULL,
     conduite_moyen_roulant VARCHAR2(250),
@@ -98,25 +98,21 @@ CREATE TABLE moyens_roulant (
     PRIMARY KEY (code_moyen_roulant)
 );
 
-
 CREATE TABLE equipements (
     code_equipements VARCHAR2(250) NOT NULL,
     nom_equipements VARCHAR2(250),
     PRIMARY KEY (code_equipements)
 );
 
-
-CREATE TABLE usage (
-    nom_usage VARCHAR2(250) NOT NULL,
-    PRIMARY KEY (nom_usage)
+CREATE TABLE usages (
+    nom_usages VARCHAR2(250) NOT NULL,
+    PRIMARY KEY (nom_usages)
 );
-
 
 CREATE TABLE statuts (
     nom_statuts VARCHAR2(250) NOT NULL,
     PRIMARY KEY (nom_statuts)
 );
-
 
 CREATE TABLE taches (
     code_taches VARCHAR2(250) NOT NULL,
@@ -124,14 +120,14 @@ CREATE TABLE taches (
     PRIMARY KEY (code_taches)
 );
 
-
 /*************************      Associations devenant des entités/Tables      *****************************/
 
-CREATE TABLE bon_de_missions (
-    date_bon_de_missions DATE,
+CREATE TABLE produits_inseres (
+    date_produits_inseres DATE,
+    quantite_produits_inseres INTEGER,
     matricule_Agent VARCHAR2(250),
-    code_interventions VARCHAR2(250),
-    PRIMARY KEY (matricule_Agent, code_interventions)  
+    code_produits VARCHAR2(250),
+    PRIMARY KEY (matricule_Agent, code_produits)
 );
 
 CREATE TABLE exploitation (
@@ -140,6 +136,21 @@ CREATE TABLE exploitation (
     matricule_Agent VARCHAR2(250),
     code_moyen_roulant VARCHAR2(250),
     PRIMARY KEY (matricule_Agent, code_moyen_roulant)
+);
+
+CREATE TABLE produits_utilises (
+    date_produits_utilises DATE,
+    quantite_produits_utilises INTEGER,
+    code_produits VARCHAR2(250),
+    code_interventions VARCHAR2(250),
+    PRIMARY KEY (code_produits, code_interventions)
+);
+
+CREATE TABLE bon_de_missions (
+    date_bon_de_missions DATE,
+    matricule_Agent VARCHAR2(250),
+    code_interventions VARCHAR2(250),
+    PRIMARY KEY (matricule_Agent, code_interventions)  
 );
 
 CREATE TABLE taches_effectuees (
@@ -162,31 +173,14 @@ CREATE TABLE historique_statuts (
     PRIMARY KEY (code_moyen_roulant, nom_statuts)
 );
 
-CREATE TABLE produits_inseres (
-    date_produits_inseres DATE,
-    quantite_produits_inseres INTEGER,
-    matricule_Agent VARCHAR2(250),
-    code_produits VARCHAR2(250),
-    PRIMARY KEY (matricule_Agent, code_produits)
-);
-
-CREATE TABLE produits_utilises (
-    date_produits_utilises DATE,
-    quantite_produits_utilises INTEGER,
-    code_produits VARCHAR2(250),
-    code_interventions VARCHAR2(250),
-    PRIMARY KEY (code_produits, code_interventions)
-);
-
 /***************************      ALTER TABLE : ADD CONSTRAINT    ***************************/
 /********************      Attention à l'ordre d"ajout des constraintes   ****************************/
-
 
 ALTER TABLE produits ADD CONSTRAINT FK_produits_code_magasins FOREIGN KEY (code_magasins) REFERENCES magasins (code_magasins);
 ALTER TABLE magasins ADD CONSTRAINT FK_magasins_code_sites FOREIGN KEY (code_sites) REFERENCES sites (code_sites);
 ALTER TABLE interventions ADD CONSTRAINT FK_interventions_code_moyen_roulant FOREIGN KEY (code_moyen_roulant) REFERENCES moyens_roulant (code_moyen_roulant);
 ALTER TABLE interventions ADD CONSTRAINT FK_interventions_code_sites FOREIGN KEY (code_sites) REFERENCES sites (code_sites);
-ALTER TABLE moyens_roulant ADD CONSTRAINT FK_moyens_roulant_nom_usage FOREIGN KEY (nom_usage) REFERENCES usage (nom_usage);
+ALTER TABLE moyens_roulant ADD CONSTRAINT FK_moyens_roulant_nom_usages FOREIGN KEY (nom_usages) REFERENCES usages (nom_usages);
 ALTER TABLE equipements ADD CONSTRAINT FK_equipements_code_moyen_roulant FOREIGN KEY (code_moyen_roulant) REFERENCES moyens_roulant (code_moyen_roulant);
 ALTER TABLE produits_inseres ADD CONSTRAINT FK_produits_inseres_matricule_Agent FOREIGN KEY (matricule_Agent) REFERENCES agents (matricule_Agent);
 ALTER TABLE produits_inseres ADD CONSTRAINT FK_produits_inseres_code_produits FOREIGN KEY (code_produits) REFERENCES produits (code_produits);
