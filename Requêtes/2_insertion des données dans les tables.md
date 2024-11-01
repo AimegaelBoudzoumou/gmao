@@ -10,18 +10,16 @@ INSERT INTO agents VALUES (
     'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', to_date('1980-12-03', 'YYYY-MM-DD'), 0752414587
 );
 
-select nom_agent, 
+SELECT nom_agent, 
        matricule_agent, 
        to_char(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
-from agents;
+FROM agents;
 ```
 
 __Table usages__
 ```sql
 INSERT INTO usages VALUES ('Travaux');
 INSERT INTO usages VALUES ('Voyages');
-
-SELECT * FROM usages;
 ```
 
 __Table moyens_roulants__
@@ -33,8 +31,6 @@ VALUES ('MP89CC', 'conduite conducteur', to_date('01-01-1997', 'DD-MM-YYYY'), to
 
 INSERT INTO moyens_roulant 
 VALUES ('MP89CA', 'conduite automatique', to_date('01-01-1997', 'DD-MM-YYYY'), to_date('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
-
-SELECT * FROM moyens_roulant;
 ```
 
 __Table equipements__
@@ -77,5 +73,4 @@ __Table magasins__
 -- il peut être pertinent de supprimer le champ 'adresse_magasins' de la table magasin, car le champ site nous fournit déjà une adresse
 INSERT INTO magasins VALUES ('MAG14', 'magasin Fontenay', 'Fontenay', 'CDT-Fontenay');
 INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot');
-select * from magasins;
 ```
