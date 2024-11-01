@@ -9,4 +9,9 @@ __Table Agents:__
 INSERT INTO agents VALUES (
     'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', to_date('1980-12-03', 'YYYY-MM-DD'), 0752414587
 );
+
+select nom_agent, 
+       matricule_agent, 
+       to_char(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
+from agents;
 ```
