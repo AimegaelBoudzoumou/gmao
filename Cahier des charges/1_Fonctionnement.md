@@ -51,7 +51,7 @@ Pour atteindre leur objectif de maintenance, les techniciens peuvent avoir besoi
 
 Chaque entrée d'un produit augmente la quantité réelle du produit. Chaque sortie (utilisation lors d'une intervention) de produit diminue la quantité réelle du produit.
 
-Il est possible de mettre en place un __**trigger**__ pour optimiser le stock des produits. Ce _triger_ écoutera le champ "seuil alerte" de la table "produits". En fonction du type, gamme et catégorie du produit, si la quatité réelle est inférieur au seuil alerte, alors une champ "alerte_produit" de type varchar est mis à _oui_ (ce champ vaut initialement _non_).
+Il est possible de mettre en place un __**trigger**__ pour optimiser le stock des produits. Ce _trigger_ écoutera le champ "seuil alerte" de la table "produits". En fonction du type, gamme et catégorie du produit, si la quatité réelle est inférieur au seuil alerte, alors une champ "alerte_produit" de type varchar est mis à _oui_ (ce champ vaut initialement _non_).
 
 Si on souhaite garder un historique des alertes produits, on doit créer une table (par exemple __alerte_produits__) associée à la table produit. Les cardinalités max de l'association vaudront N,N
 
