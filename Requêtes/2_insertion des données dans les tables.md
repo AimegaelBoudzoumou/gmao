@@ -70,6 +70,7 @@ INSERT INTO sites VALUES ('AMT-Mallot',
                           0154856254,
                           'Moussawi'
 );
+```
 
 __Table magasins__
 ```sql
