@@ -2,7 +2,7 @@
 
 Se trouvent ici les requêtes relatives à la création des tables.
 
-_Note_ : ce code SQL a été testé dans un environnement __Live SQL__
+_Note_ : ce code SQL a été testé dans un environnement __Live SQL Oracle__
 
 ```sql
 /********************    Attention à l'ordre de suppression des tables   ****************************/
