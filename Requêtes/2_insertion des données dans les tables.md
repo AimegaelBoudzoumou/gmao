@@ -42,3 +42,32 @@ __Table equipements__
 INSERT INTO equipements VALUES ('BG452', 'Boggie', 'MP89CC');
 INSERT INTO equipements VALUES ('LP4512', 'Lampe', 'MP89CA');
 ```
+
+__Table statuts__
+```sql
+INSERT INTO statuts VALUES ('En service');
+INSERT INTO statuts VALUES ('En reparation');
+```
+
+__Table sites__
+```sql
+-- Atelier du métro de Paris : https://fr.wikipedia.org/wiki/Ateliers_du_m%C3%A9tro_de_Paris
+
+INSERT INTO sites VALUES ('CDT-Fontenay',
+                          'Fontenay AMT L.1 et AMP ', 
+                          'centre de dépannage', 
+                          '16, rue J.J. Rousseau 94120 Fontenay-sous-Bois', 
+                          '48° 50′ 51″ nord, 2° 27′ 27″ est',
+                          0154856232,
+                          'Beranger'
+);
+
+INSERT INTO sites VALUES ('AMT-Mallot',
+                          'Maillot AMT L.1 ', 
+                          'atelier de maintenance', 
+                          'Place de la Porte-Maillot 75017 Paris', 
+                          '48° 52′ 38″ nord, 2° 17′ 03″ est',
+                          0154856254,
+                          'Moussawi'
+);
+```
