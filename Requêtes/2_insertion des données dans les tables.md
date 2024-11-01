@@ -4,7 +4,7 @@ Le code suivant permet d'insérer un jeu de données dans les tables.
 
 _Note :je présente d'abord une requête d'insertion pour chaque table. Le code complet se trouve en bas de cette page._
 
-__Table Agents:__
+__Table agents:__
 ```sql
 INSERT INTO agents VALUES (
     'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', to_date('1980-12-03', 'YYYY-MM-DD'), 0752414587
@@ -16,7 +16,7 @@ select nom_agent,
 from agents;
 ```
 
-__Table Usages__
+__Table usages__
 ```sql
 INSERT INTO usages VALUES ('Travaux');
 INSERT INTO usages VALUES ('Voyages');
@@ -24,7 +24,7 @@ INSERT INTO usages VALUES ('Voyages');
 SELECT * FROM usages;
 ```
 
-__Table Moyens_roulants__
+__Table moyens_roulants__
 ```sql
 ALTER TABLE moyens_roulant MODIFY pmp_moyen_roul NUMBER;-- initialement de type 'date', le champ pmp_moyen_roulant est modifié en type 'number'
 
@@ -37,3 +37,8 @@ VALUES ('MP89CA', 'conduite automatique', to_date('01-01-1997', 'DD-MM-YYYY'), t
 SELECT * FROM moyens_roulant;
 ```
 
+__Table equipements__
+```sql
+INSERT INTO equipements VALUES ('BG452', 'Boggie', 'MP89CC');
+INSERT INTO equipements VALUES ('LP4512', 'Lampe', 'MP89CA');
+```
