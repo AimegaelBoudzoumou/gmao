@@ -2,7 +2,7 @@
 
 Le code suivant permet d'insérer un jeu de données dans les tables.
 
-_En cous de rédaction : merci de votre compréhesion_
+_Note : je mets une une insertion par table. Le code plus complet se trouve en bas de cette page._
 
 __Table Agents:__
 ```sql
