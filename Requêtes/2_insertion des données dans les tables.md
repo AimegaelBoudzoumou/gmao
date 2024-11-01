@@ -70,4 +70,12 @@ INSERT INTO sites VALUES ('AMT-Mallot',
                           0154856254,
                           'Moussawi'
 );
+
+__Table magasins__
+```sql
+-- il peut être pertinent de supprimer le champ 'adresse_magasins' de la table magasin, car le champ site nous fournit déjà une adresse
+INSERT INTO magasins VALUES ('MAG14', 'magasin Fontenay', 'Fontenay', 'CDT-Fontenay');
+INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot');
+select * from magasins;
+```
 ```
