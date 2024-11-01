@@ -142,9 +142,8 @@ INSERT INTO sites VALUES ('AMT-Mallot',
                           0154856254,
                           'Moussawi'
 );
-```
 
--- Table magasins__
+-- Table magasins
 INSERT INTO magasins VALUES ('MAG14', 'magasin Fontenay', 'Fontenay', 'CDT-Fontenay');
 INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot');
 
