@@ -78,4 +78,3 @@ INSERT INTO magasins VALUES ('MAG14', 'magasin Fontenay', 'Fontenay', 'CDT-Fonte
 INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot');
 select * from magasins;
 ```
-```
