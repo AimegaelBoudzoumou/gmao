@@ -74,3 +74,18 @@ __Table magasins__
 INSERT INTO magasins VALUES ('MAG14', 'magasin Fontenay', 'Fontenay', 'CDT-Fontenay');
 INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot');
 ```
+
+__Table produits__
+```sql
+select * from produits;
+INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
+                             'Type_P', 'Huile', 'Moteur', 'litre', 200, 25, to_date('2000-06-11', 'YYYY-MM-DD'),
+                             'non', 'MAG14');
+```
+
+__Table Taches__
+```sql
+INSERT INTO taches VALUES ('CH-HU', 'changement huile');
+```
+
+
