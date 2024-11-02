@@ -8,7 +8,7 @@ _Note : je présente d'abord une requête d'insertion pour chaque table. Le code
 __Table agents:__
 ```sql
 INSERT INTO agents VALUES (
-    'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', to_date('1980-12-03', 'YYYY-MM-DD'), 0752414587
+    'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', TO_DATE('1980-12-03', 'YYYY-MM-DD'), 0752414587
 );
 
 SELECT nom_agent, 
@@ -26,10 +26,10 @@ INSERT INTO usages VALUES ('Voyages');
 __Table moyens_roulants__
 ```sql
 INSERT INTO moyens_roulant 
-VALUES ('MP89CC', 'conduite conducteur', to_date('01-01-1997', 'DD-MM-YYYY'), to_date('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
+VALUES ('MP89CC', 'conduite conducteur', TO_DATE('01-01-1997', 'DD-MM-YYYY'), TO_DATE('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
 
 INSERT INTO moyens_roulant 
-VALUES ('MP89CA', 'conduite automatique', to_date('01-01-1997', 'DD-MM-YYYY'), to_date('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
+VALUES ('MP89CA', 'conduite automatique', TO_DATE('01-01-1997', 'DD-MM-YYYY'), TO_DATE('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
 ```
 
 __Table equipements__
@@ -78,7 +78,7 @@ __Table produits__
 ```sql
 select * from produits;
 INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
-                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, to_date('2000-06-11', 'YYYY-MM-DD'),
+                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, TO_DATE('2000-06-11', 'YYYY-MM-DD'),
                              'non', 'MAG14');
 ```
 
@@ -89,7 +89,7 @@ INSERT INTO taches VALUES ('CH-HU', 'changement huile');
 
 __Table interventions__
 ```sql
-INSERT INTO interventions VALUES ('JHJU25', to_date('2024-11-04', 'YYYY-MM-DD'), null, 'préventive', null, 'MP89CA', 'AMT-Mallot');
+INSERT INTO interventions VALUES ('JHJU25', TO_DATE('2024-11-04', 'YYYY-MM-DD'), null, 'préventive', null, 'MP89CA', 'AMT-Mallot');
 ```
 
 # code complet
@@ -98,12 +98,12 @@ INSERT INTO interventions VALUES ('JHJU25', to_date('2024-11-04', 'YYYY-MM-DD'),
 -- Table agents
 
 INSERT INTO agents VALUES (
-    'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', to_date('1980-12-03', 'YYYY-MM-DD'), 0752414587
+    'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', TO_DATE('1980-12-03', 'YYYY-MM-DD'), 0752414587
 );
 
 /*SELECT nom_agent, 
        matricule_agent, 
-       to_char(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
+       TO_CHAR(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
 FROM agents;*/
 
 -- Table usages
@@ -112,10 +112,10 @@ INSERT INTO usages VALUES ('Voyages');
 
 -- Table moyens_roulant
 INSERT INTO moyens_roulant 
-VALUES ('MP89CC', 'conduite conducteur', to_date('01-01-1997', 'DD-MM-YYYY'), to_date('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
+VALUES ('MP89CC', 'conduite conducteur', TO_DATE('01-01-1997', 'DD-MM-YYYY'), TO_DATE('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
 
 INSERT INTO moyens_roulant 
-VALUES ('MP89CA', 'conduite automatique', to_date('01-01-1997', 'DD-MM-YYYY'), to_date('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
+VALUES ('MP89CA', 'conduite automatique', TO_DATE('01-01-1997', 'DD-MM-YYYY'), TO_DATE('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
 
 -- Table equipements
 INSERT INTO equipements VALUES ('BG452', 'Boggie', 'MP89CC');
@@ -151,7 +151,7 @@ INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot'
 -- Table produits
 
 INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
-                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, to_date('2000-06-11', 'YYYY-MM-DD'),
+                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, TO_DATE('2000-06-11', 'YYYY-MM-DD'),
                              'non', 'MAG14'
 );
 
@@ -159,5 +159,5 @@ INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le mo
 INSERT INTO taches VALUES ('CH-HU', 'changement huile');
 
 -- Table interventions
-INSERT INTO interventions VALUES ('JHJU25', to_date('2024-11-04', 'YYYY-MM-DD'), null, 'préventive', null, 'MP89CA', 'AMT-Mallot');
+INSERT INTO interventions VALUES ('JHJU25', TO_DATE('2024-11-04', 'YYYY-MM-DD'), null, 'préventive', null, 'MP89CA', 'AMT-Mallot');
 ```
