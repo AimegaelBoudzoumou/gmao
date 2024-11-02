@@ -110,7 +110,7 @@ CREATE TABLE moyens_roulant (
     arrivee_moyen_roul DATE,
     mise_en_service_moyen_roul DATE,
     depart_moyen_roul DATE,
-    pmp_moyen_roul DATE,
+    pmp_moyen_roul NUMBER,
     nom_usages VARCHAR2(250),
     PRIMARY KEY (code_moyen_roulant)
 );
