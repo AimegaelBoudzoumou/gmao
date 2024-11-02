@@ -15,9 +15,11 @@ __Table Concerner__
 __Table Taches_effectuees__
 
 __Table Produits inseres__
+
 Ecrire un Trigger qui met à jour la table produit, quand un produit est inséré
 
 __Table Produits utilises__
+
 Ecrire un Trigger qui met à jour la table produit, quand un produit est utilisé
 
 ## Code complet
