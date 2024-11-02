@@ -25,8 +25,6 @@ INSERT INTO usages VALUES ('Voyages');
 
 __Table moyens_roulants__
 ```sql
-ALTER TABLE moyens_roulant MODIFY pmp_moyen_roul NUMBER;-- initialement de type 'date', le champ pmp_moyen_roulant est modifié en type 'number'
-
 INSERT INTO moyens_roulant 
 VALUES ('MP89CC', 'conduite conducteur', to_date('01-01-1997', 'DD-MM-YYYY'), to_date('1997-02-01', 'YYYY-MM-DD'), null, 150000, 'Voyages');
 
@@ -106,8 +104,6 @@ FROM agents;*/
 -- Table usages
 INSERT INTO usages VALUES ('Travaux');
 INSERT INTO usages VALUES ('Voyages');
-
-ALTER TABLE moyens_roulant MODIFY pmp_moyen_roul NUMBER;-- initialement de type 'date', le champ pmp_moyen_roulant est modifié en type 'number'
 
 -- Table moyens_roulant
 INSERT INTO moyens_roulant 
