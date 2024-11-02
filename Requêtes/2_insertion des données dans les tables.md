@@ -151,7 +151,7 @@ INSERT INTO magasins VALUES ('MAG48', 'magasin Maillot', 'Maillot', 'AMT-Mallot'
 -- Table produits
 
 INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
-                             'Type_P', 'Huile', 'Moteur', 'litre', 200, 25, to_date('2000-06-11', 'YYYY-MM-DD'),
+                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, to_date('2000-06-11', 'YYYY-MM-DD'),
                              'non', 'MAG14'
 );
 
