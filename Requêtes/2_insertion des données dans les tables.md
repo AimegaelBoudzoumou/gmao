@@ -13,7 +13,7 @@ INSERT INTO agents VALUES (
 
 SELECT nom_agent, 
        matricule_agent, 
-       to_char(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
+       TO_CHAR(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
 FROM agents;
 ```
 
