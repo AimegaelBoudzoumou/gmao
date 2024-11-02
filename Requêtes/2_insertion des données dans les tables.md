@@ -157,10 +157,7 @@ INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le mo
 
 -- Table Taches
 INSERT INTO taches VALUES ('CH-HU', 'changement huile');
-```
-
 
 -- Table interventions
-```sql
 INSERT INTO interventions VALUES ('JHJU25', to_date('2024-11-04', 'YYYY-MM-DD'), null, 'préventive', null, 'MP89CA', 'AMT-Mallot');
 ```
