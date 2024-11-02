@@ -8,13 +8,17 @@ __Table bon_de_missions__
 ```sql
 INSERT INTO bon_de_missions VALUES (TO_DATE(CURRENT_DATE, 'yyyy-MM-DD'), 'NL521', 'JHJU25');
 ```
-
 __Table historique_statuts__
-
 
 __Table Concerner__
 
+__Table Taches_effectuees__
 
+__Table Produits inseres__
+Ecrire un Trigger qui met à jour la table produit, quand un produit est inséré
+
+__Table Produits utilises__
+Ecrire un Trigger qui met à jour la table produit, quand un produit est utilisé
 
 ## Code complet
 ```sql
