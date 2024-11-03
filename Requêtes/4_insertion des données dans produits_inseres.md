@@ -2,13 +2,37 @@
 
 Rappel : lors de sa création, un produit a un stock réel (champ _qtite_reelle_produits_ dans la table _produits_) à nul (zéro).
 
-Chaque insertion de produit (table_produits_inseres_) augemente le stock du produit en question.
+Chaque insertion de produit (table _produits_inseres_) augemente le stock du produit en question.
 
 Cette augmentation de stock est réalisée automatiquement, grâce à un _Trigger_
 
 Ce _Trigger_ est déclenché lors d'une insertion dans la table _produits_inseres_
 
-## Trigger : 
+## Trigger et Insertion d'une données dans la table produits_inseres
 
+```sql
+SELECT * FROM produits_inseres;
 
-## Insertion d'une données dans la table produits_inseres
+SELECT * FROM  produits;
+
+CREATE OR REPLACE TRIGGER update_product_stock_after_inserting
+AFTER INSERT ON produits_inseres
+FOR EACH ROW
+ENABLE
+DECLARE
+    
+BEGIN
+    UPDATE produits p
+    SET qtite_reelle_produits = qtite_reelle_produits + :NEW.quantite_produits_inseres
+    WHERE p.code_produits = :NEW.code_produits;
+END;
+/
+
+INSERT INTO produits_inseres VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 15, 'NL521', 'PRTG8');
+SELECT * FROM produits_inseres;
+SELECT * FROM produits;
+
+INSERT INTO produits_inseres VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 10, 'NL521', 'PRTG8');
+SELECT * FROM produits_inseres;
+SELECT * FROM produits;
+```
