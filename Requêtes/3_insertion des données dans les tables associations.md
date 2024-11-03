@@ -31,11 +31,11 @@ INSERT INTO taches_effectuees VALUES ('JHJU25', 'CH-HU');
 
 __Table Produits inseres__
 
-Ecrire un Trigger qui met à jour la table produit, quand un produit est inséré
+Le code SQL se trouve dans le fichier : _4_insertion des données dans produits_inseres_
 
 __Table Produits utilises__
 
-Ecrire un Trigger qui met à jour la table produit, quand un produit est utilisé
+Le code SQL se trouve dans le fichier : _4_insertion des données dans produits_utilises_
 
 ## Code complet
 ```sql
