@@ -6,11 +6,13 @@ _Note : je présente d'abord une requête d'insertion pour chaque table. Le code
 
 __Table bon_de_missions__
 ```sql
-INSERT INTO bon_de_missions VALUES (TO_DATE(CURRENT_DATE, 'yyyy-MM-DD'), 'NL521', 'JHJU25');
+INSERT INTO bon_de_missions VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'NL521', 'JHJU25');
+
+-- SELECT TO_CHAR(date_bon_de_missions, 'DD-MM-YYYY') as date_bon_missions, matricule_agent, code_interventions FROM bon_de_missions;
 ```
 __Table historique_statuts__
 ```SQL
-INSERT INTO historique_statuts VALUES (to_date(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
+INSERT INTO historique_statuts VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
 
 --SELECT code_moyen_roulant, nom_statuts, TO_CHAR(date_historique_statuts, 'DD-MM-YYYY') as date_histo FROM historique_statuts;
 ```
