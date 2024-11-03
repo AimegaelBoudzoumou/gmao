@@ -9,6 +9,11 @@ __Table bon_de_missions__
 INSERT INTO bon_de_missions VALUES (TO_DATE(CURRENT_DATE, 'yyyy-MM-DD'), 'NL521', 'JHJU25');
 ```
 __Table historique_statuts__
+```SQL
+INSERT INTO historique_statuts VALUES (to_date(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
+
+--SELECT code_moyen_roulant, nom_statuts, TO_CHAR(date_historique_statuts, 'DD-MM-YYYY') as date_histo FROM historique_statuts;
+```
 
 __Table Concerner__
 
@@ -27,6 +32,8 @@ Ecrire un Trigger qui met √† jour la table produit, quand un produit est utilis√
 -- bon_de_missions
 INSERT INTO bon_de_missions VALUES (to_date(CURRENT_DATE, 'yyyy-MM-DD'), 'NL521', 'JHJU25');
 
+-- Table historique_statuts
+INSERT INTO historique_statuts VALUES (to_date(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
 ```
 
 
