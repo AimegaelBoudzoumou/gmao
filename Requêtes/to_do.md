@@ -9,6 +9,7 @@
 - Liste des produits en alerte
 - Afficher le nombre de fois qu'un agent a été affecté à un MR donnée
 - retrouver le type de maintenance concerné par une tâche donnée/quelconque
+- mettre en place un Trigger en relation avec le seuil alerte de produits
 
 Présentation de chaque besoin métier
 # Besoin métier
