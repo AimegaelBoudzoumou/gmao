@@ -8,6 +8,7 @@
 - Afficher les prochaines interventions sur un moyen
 - Liste des produits en alerte
 - Afficher le nombre de fois qu'un agent a été affecté à un MR donnée
+- retrouver le type de maintenance concerné par une tâche donnée/quelconque
 
 Présentation de chaque besoin métier
 # Besoin métier
