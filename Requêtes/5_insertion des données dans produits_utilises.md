@@ -1,7 +1,5 @@
 # INSERT INTO produits_utilises
 
--- Rappel : lors de sa création, un produit a un stock réel (champ qtite_reelle_produits dans la table produits) à nul (zéro).
-
 Chaque sortie de produit (table produits_utilises) diminue le stock du produit en question.
 
 Cette diminution de stock est réalisée automatiquement, grâce à un Trigger.
