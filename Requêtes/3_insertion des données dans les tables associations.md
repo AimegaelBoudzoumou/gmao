@@ -31,11 +31,11 @@ Ecrire un Trigger qui met √† jour la table produit, quand un produit est utilis√
 
 ## Code complet
 ```sql
+
 -- bon_de_missions
-INSERT INTO bon_de_missions VALUES (to_date(CURRENT_DATE, 'yyyy-MM-DD'), 'NL521', 'JHJU25');
+INSERT INTO bon_de_missions VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'NL521', 'JHJU25');
 
 -- Table historique_statuts
-INSERT INTO historique_statuts VALUES (to_date(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
+INSERT INTO historique_statuts VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
+
 ```
-
-
