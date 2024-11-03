@@ -8,10 +8,10 @@ _Note : je présente d'abord une requête d'insertion pour chaque table. Le code
 __Table agents:__
 ```sql
 INSERT INTO agents VALUES (
-    'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', TO_DATE('1980-12-03', 'YYYY-MM-DD'), 0752414587
+    'NL521', 'Massamba', 'Beatrice', 'Conducteur', 'Exploitation', TO_DATE('1980-12-03', 'YY-MM-DD'), 0752414587
 );
 
-SELECT nom_agent, 
+-- SELECT nom_agent, 
        matricule_agent, 
        TO_CHAR(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
 FROM agents;
