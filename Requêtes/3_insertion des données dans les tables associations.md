@@ -20,11 +20,14 @@ INSERT INTO historique_statuts VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'MP89CC', '
 __Table Concerner__
 ```sql
 INSERT INTO concerner VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'JHJU25', 'BG452');
+
 -- SELECT code_interventions, code_equipements, TO_CHAR(date_concerner, 'DD-MM-YYYY') as date_concerner FROM concerner;
 ```
 
 __Table Taches_effectuees__
-
+```sql
+INSERT INTO taches_effectuees VALUES ('JHJU25', 'CH-HU');
+```
 
 __Table Produits inseres__
 
@@ -42,5 +45,11 @@ INSERT INTO bon_de_missions VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'NL521', 'JHJU
 
 -- Table historique_statuts
 INSERT INTO historique_statuts VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
+
+-- Table Concerner
+INSERT INTO concerner VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'JHJU25', 'BG452');
+
+-- Table Taches_effectuees
+INSERT INTO taches_effectuees VALUES ('JHJU25', 'CH-HU');
 
 ```
