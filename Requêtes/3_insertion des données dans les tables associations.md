@@ -1,4 +1,4 @@
-# INSERT INTO TABLE (suite)
+# INSERT INTO TABLE (2/2)
 
 Le code suivant permet d'insérer un jeu de données dans les tables_associations. Dans un autre fichier, j'ai rédigé le code SQL d'insertion des données dans les tables _propres_.
 
