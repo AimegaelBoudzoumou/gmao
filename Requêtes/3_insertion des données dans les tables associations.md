@@ -14,12 +14,17 @@ __Table historique_statuts__
 ```SQL
 INSERT INTO historique_statuts VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'MP89CC', 'En service');
 
---SELECT code_moyen_roulant, nom_statuts, TO_CHAR(date_historique_statuts, 'DD-MM-YYYY') as date_histo FROM historique_statuts;
+-- SELECT code_moyen_roulant, nom_statuts, TO_CHAR(date_historique_statuts, 'DD-MM-YYYY') as date_histo FROM historique_statuts;
 ```
 
 __Table Concerner__
+```sql
+INSERT INTO concerner VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 'JHJU25', 'BG452');
+-- SELECT code_interventions, code_equipements, TO_CHAR(date_concerner, 'DD-MM-YYYY') as date_concerner FROM concerner;
+```
 
 __Table Taches_effectuees__
+
 
 __Table Produits inseres__
 
