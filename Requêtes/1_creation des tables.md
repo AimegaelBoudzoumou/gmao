@@ -162,7 +162,7 @@ CREATE TABLE produits_utilises (
     date_produits_utilises DATE,
     quantite_produits_utilises INTEGER,
     code_produits VARCHAR2(250),
-    code_interventions VARCHAR2(250),
+    code_interventions VARCHAR2(250)
     -- PRIMARY KEY (code_produits, code_interventions)
 );
 
