@@ -35,6 +35,8 @@ BEGIN
       UPDATE produits p
       SET p.qtite_reelle_produits = p.qtite_reelle_produits - :NEW.quantite_produits_utilises
       WHERE p.code_produits = :NEW.code_produits;
+    ELSE
+      DMBS_OUTPUT.PUT_LINE('Impossible d'utiliser ce produit. Problème de stock');
     END IF;
 END;
 /
