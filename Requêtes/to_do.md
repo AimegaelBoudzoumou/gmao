@@ -11,6 +11,9 @@
 - retrouver le type de maintenance concerné par une tâche donnée/quelconque
 - mettre en place un Trigger en relation avec le seuil alerte de produits
 - La quantité de produits utilisés sur une intervention
+- La quantité d'un produit donné utilisée sur une intervention
+- Le nombre de fois qu'un produit donnée a été utilisé
+- Le nombre de fois qu'un produit donnée a été utilisé sur une interventions donnée
 
 Présentation de chaque besoin métier
 # Besoin métier
