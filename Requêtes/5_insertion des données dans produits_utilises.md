@@ -27,7 +27,7 @@ IF (:NEW.quantite_produits_utilises <= qtite_reelle_produits_en_bd AND
     :NEW.quantite_produits_utilises > 0 ) THEN
     ...
 ELSE
-	raise_application_error(-20130, 'Veuillez saisir un nombre égal ou supérieur au stock actuel: ' || qtite_reelle_produits_en_bd);
+	raise_application_error(-20130, 'Veuillez saisir un nombre égal ou inférieur au stock réel: ' || qtite_reelle_produits_en_bd);
 */
     IF :NEW.quantite_produits_utilises > qtite_reelle_produits_en_bd THEN
 		raise_application_error(-20110,'Stock insuffisant');
