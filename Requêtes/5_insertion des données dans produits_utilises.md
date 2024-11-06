@@ -10,19 +10,19 @@ Ce Trigger est déclenché lors d'une insertion dans la table produits_utilises:
 
 ## Trigger et Insertion d'une données dans la table produits_utilises -- A TESTER
 ```sql
+-- ######################################## Create Trigger trg_before_inserting_on_produits_utilises
+
 CREATE OR REPLACE TRIGGER trg_before_inserting_on_produits_utilises
 BEFORE INSERT ON produits_utilises
 FOR EACH ROW
 ENABLE
-	--WHEN (NEW.quantite_produits_utilises <= qtite_reelle_produits)
+-- WHEN ...
 DECLARE
     qtite_reelle_produits_en_bd produits.qtite_reelle_produits%TYPE;
-	--produit_utilise_id    produits_utilises.produit_utilise_id%TYPE;	
 BEGIN
     SELECT qtite_reelle_produits INTO qtite_reelle_produits_en_bd FROM produits p WHERE p.code_produits = :NEW.code_produits;
 
     IF :NEW.quantite_produits_utilises > qtite_reelle_produits_en_bd THEN
-        --DBMS_OUTPUT.PUT_LINE('Stock insuffisant');
 		raise_application_error(-20110,'Stock insuffisant');
 	ELSIF :NEW.quantite_produits_utilises <= 0 THEN
 		raise_application_error(-20112,'Quantité saisie non autorisée');
