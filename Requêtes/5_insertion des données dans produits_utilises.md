@@ -24,6 +24,8 @@ BEGIN
     IF :NEW.quantite_produits_utilises > qtite_reelle_produits_en_bd THEN
         --DBMS_OUTPUT.PUT_LINE('Stock insuffisant');
 		raise_application_error(-20110,'Stock insuffisant');
+	ELSIF :NEW.quantite_produits_utilises <= 0 THEN
+		raise_application_error(-20112,'Quantité saisie non autorisée');
 	ELSE
         UPDATE produits p
       	SET    qtite_reelle_produits = qtite_reelle_produits - :NEW.quantite_produits_utilises
@@ -31,18 +33,11 @@ BEGIN
 	END IF;
 END;
 /
-    
+
 -- ######################################## Manipulation
 
-INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
-                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, TO_DATE('2000-06-11', 'YYYY-MM-DD'),
-                             'non', 'MAG14'
-                            );
-INSERT INTO produits_inseres(date_produits_inseres, quantite_produits_inseres, matricule_Agent, code_produits) 
-       VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 8, 'NL521', 'PRTG8');
-
 INSERT INTO produits_utilises(date_produits_utilises, quantite_produits_utilises, code_produits, code_interventions) 
-       VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 9, 'PRTG8', 'JHJU25');
+       VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 5, 'PRTG8', 'JHJU25');
 
 SELECT * FROM produits_utilises;
 SELECT * FROM produits;
