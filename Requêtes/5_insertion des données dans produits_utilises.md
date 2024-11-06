@@ -23,8 +23,9 @@ BEGIN
     SELECT qtite_reelle_produits INTO qtite_reelle_produits_en_bd FROM produits p WHERE p.code_produits = :NEW.code_produits;
 
 /*
-IF :NEW.quantite_produits_utilises >= qtite_reelle_produits_en_bd THEN
-...
+IF (:NEW.quantite_produits_utilises <= qtite_reelle_produits_en_bd AND
+    :NEW.quantite_produits_utilises > 0 ) THEN
+    ...
 ELSE
 	raise_application_error(-20130, 'Veuillez saisir un nombre égal ou supérieur au stock actuel: ' || qtite_reelle_produits_en_bd);
 */
