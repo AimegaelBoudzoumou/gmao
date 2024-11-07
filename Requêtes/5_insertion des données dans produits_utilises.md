@@ -32,7 +32,7 @@ ELSE
     IF :NEW.quantite_produits_utilises > qtite_reelle_produits_en_bd THEN
 		raise_application_error(-20110,'Stock insuffisant');
 	ELSIF :NEW.quantite_produits_utilises <= 0 THEN
-		raise_application_error(-20112,'Quantité saisie non autorisée');
+		EXIT; -- or : raise_application_error(-20112,'Quantité saisie non autorisée');
 	ELSE
         UPDATE produits p
       	SET    qtite_reelle_produits = qtite_reelle_produits - :NEW.quantite_produits_utilises
