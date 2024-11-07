@@ -22,21 +22,13 @@ DECLARE
 BEGIN
     SELECT qtite_reelle_produits INTO qtite_reelle_produits_en_bd FROM produits p WHERE p.code_produits = :NEW.code_produits;
 
-/*
-IF (:NEW.quantite_produits_utilises <= qtite_reelle_produits_en_bd AND
-    :NEW.quantite_produits_utilises > 0 ) THEN
-    ...
-ELSE
-	raise_application_error(-20130, 'Veuillez saisir un nombre égal ou inférieur au stock réel: ' || qtite_reelle_produits_en_bd);
-*/
-    IF :NEW.quantite_produits_utilises > qtite_reelle_produits_en_bd THEN
-		raise_application_error(-20110,'Stock insuffisant');
-	ELSIF :NEW.quantite_produits_utilises <= 0 THEN
-		EXIT; -- or : raise_application_error(-20112,'Quantité saisie non autorisée');
+	IF (:NEW.quantite_produits_utilises <= qtite_reelle_produits_en_bd AND
+        :NEW.quantite_produits_utilises > 0 ) THEN
+        	UPDATE produits p
+      		SET    qtite_reelle_produits = qtite_reelle_produits - :NEW.quantite_produits_utilises
+        	WHERE  p.code_produits = :NEW.code_produits;
 	ELSE
-        UPDATE produits p
-      	SET    qtite_reelle_produits = qtite_reelle_produits - :NEW.quantite_produits_utilises
-        WHERE  p.code_produits = :NEW.code_produits;
+        raise_application_error(-20130, 'Veuillez saisir un nombre égal ou inférieur au stock réel: ' || qtite_reelle_produits_en_bd);
 	END IF;
 END;
 /
@@ -44,8 +36,8 @@ END;
 -- ######################################## Manipulation
 
 INSERT INTO produits_utilises(date_produits_utilises, quantite_produits_utilises, code_produits, code_interventions) 
-       VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 5, 'PRTG8', 'JHJU25');
+       VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 1, 'PRTG8', 'JHJU25');
 
-SELECT * FROM produits_utilises;
+SELECT * FROM produits_utilises ORDER BY produit_utilise_id;
 SELECT * FROM produits;
 ```
