@@ -8,7 +8,7 @@ Ce Trigger est déclenché lors d'une insertion dans la table produits_utilises:
 - point 1: le _Trigger_ vérifie que la quantité à sortir est inférieure ou égale au stock réel (qtite_reelle_produits dans la table produits).
 - point 2: si le point 1 est vérifié (vrai), alors le stock réel (qtite_reelle_produits dans la table produits) est mis à jour
 
-## Trigger et Insertion d'une données dans la table produits_utilises -- A TESTER
+## Trigger et Insertion d'une données dans la table produits_utilises
 ```sql
 -- ######################################## Create Trigger trg_before_inserting_on_produits_utilises
 
