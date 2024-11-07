@@ -11,18 +11,7 @@ Ce _Trigger_ est déclenché lors d'une insertion dans la table _produits_insere
 ## Trigger et Insertion d'une données dans la table produits_inseres
 
 ```sql
-DELETE FROM produits_inseres;
-DELETE FROM produits;
-
-select * from produits;
-INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
-                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, TO_DATE('2000-06-11', 'YYYY-MM-DD'),
-                             'non', 'MAG14'
-                            );
-
-SELECT * FROM produits_inseres;
-
-SELECT * FROM  produits;
+-- ########################################### Create Trigger update_product_stock_after_inserting
 
 CREATE OR REPLACE TRIGGER update_product_stock_after_inserting
 AFTER INSERT ON produits_inseres
@@ -36,6 +25,20 @@ BEGIN
     WHERE p.code_produits = :NEW.code_produits;
 END;
 /
+
+-- ##############################################
+DELETE FROM produits_inseres;
+DELETE FROM produits;
+
+select * from produits;
+INSERT INTO produits VALUES ('PRTG8', 'Huile moteur', 'permet de maintenir le moteur en bon état',
+                             'Type_P', 'Huile', 'Moteur', 'litre', 0, 25, TO_DATE('2000-06-11', 'YYYY-MM-DD'),
+                             'non', 'MAG14'
+                            );
+
+SELECT * FROM produits_inseres;
+
+SELECT * FROM  produits;
 
 INSERT INTO produits_inseres(date_produits_inseres, quantite_produits_inseres, matricule_Agent, code_produits) 
        VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 15, 'NL521', 'PRTG8');
