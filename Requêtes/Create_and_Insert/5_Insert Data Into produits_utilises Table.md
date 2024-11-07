@@ -5,8 +5,8 @@ Chaque sortie de produit (table produits_utilises) diminue le stock du produit e
 Cette diminution de stock est réalisée automatiquement, grâce à un Trigger.
 
 Ce Trigger est déclenché lors d'une insertion dans la table produits_utilises:
-- point 1: le _Trigger_ vérifie que la quantité à sortir est inférieure ou égale au stock réel (qtite_reelle_produits dans la table produits).
-- point 2: si le point 1 est vérifié (vrai), alors le stock réel (qtite_reelle_produits dans la table produits) est mis à jour
+- point 1: le _Trigger_ vérifie que la quantité à sortir est inférieure ou égale au stock réel (_qtite_reelle_produits_ dans la table _produits_).
+- point 2: si le point 1 est vérifié (vrai), alors le stock réel (champ _qtite_reelle_produits_ dans la table _produits_) est mis à jour
 
 ## Trigger et Insertion d'une données dans la table produits_utilises
 ```sql
