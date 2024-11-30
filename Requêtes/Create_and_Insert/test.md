@@ -13,4 +13,6 @@ CREATE TABLE employes (
 );
 INSERT INTO employes(matricule, nom, prenom) VALUES ('JJKL25', 'Louzolo', 'Judicaelle');
 SELECT * FROM employes;
+-- TO_DATE('1980-12-03', 'YY-MM-DD'),
+-- TO_CHAR(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
 ```
