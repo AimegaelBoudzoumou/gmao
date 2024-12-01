@@ -13,6 +13,15 @@ CREATE TABLE employes (
 );
 INSERT INTO employes(matricule, nom, prenom) VALUES ('JJKL25', 'Louzolo', 'Judicaelle');
 SELECT * FROM employes;
--- TO_DATE('1980-12-03', 'YY-MM-DD'),
--- TO_CHAR(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
+/*
+Example : SYSDATE
+INSERT INTO produits_utilises(date_produits_utilises, quantite_produits_utilises, code_produits, code_interventions) 
+       VALUES (TO_DATE(SYSDATE, 'DD-MM-YY'), 1, 'PRTG8', 'JHJU25');
+
+Example : TO_CHAR
+SELECT nom_agent, 
+       matricule_agent, 
+       TO_CHAR(date_naissance_Agent, 'DD/MM/YYYY') as date_nais
+FROM agents;
+*/
 ```
