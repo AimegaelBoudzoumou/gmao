@@ -25,3 +25,10 @@ SELECT nom_agent,
 FROM agents;
 */
 ```
+
+
+```python
+list_fruits = ['banana', 'mango', 'papaya']
+for fruit in list_fruits:
+  print(fruit)
+```
