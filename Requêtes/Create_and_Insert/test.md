@@ -27,6 +27,7 @@ FROM agents;
 ```
 
 ```sql
+
 drop table vol;
 drop table pilote;
 
@@ -44,7 +45,26 @@ create table vol (
     primary key (num_vol)    
 );
 alter table vol add constraint fk_vol_matricule_pilote foreign key (matricule_pilote) references pilote(matricule_pilote);
+
+insert into pilote values (123, 'Joe');
+insert into pilote values (456, 'Bob');
+
+insert into vol values (14, TO_DATE('2025-01-01', 'YY-MM-DD'), 123);
+insert into vol values (15, TO_DATE('2025-01-04', 'YY-MM-DD'), 123);
+insert into vol values (16, TO_DATE('2025-01-07', 'YY-MM-DD'), 123);
+insert into vol values (17, TO_DATE('2025-01-01', 'YY-MM-DD'), 456);
+
+select matricule_pilote from vol;
+
+select matricule_pilote, count(*) as nb_vol from vol
+group by (matricule_pilote);
+
+select p.matricule_pilote, p.name, count(*) nb_vol
+from pilote p join vol v on p.matricule_pilote = v.matricule_pilote
+group by (p.matricule_pilote, p.name);
 ```
+
+https://docs.oracle.com/en/error-help/db/ora-00979/?r=23ai
 
 ```python
 list_fruits = ['banana', 'mango', 'papaya']
