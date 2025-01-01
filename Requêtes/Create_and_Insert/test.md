@@ -25,7 +25,27 @@ SELECT nom_agent,
 FROM agents;
 */
 ```
+<!--
+```sql
+drop table vol;
+drop table pilote;
 
+create table pilote (
+    matricule_pilote int,
+    name varchar2(50),
+    primary key (matricule_pilote)
+);
+
+
+create table vol (
+    num_vol int,
+    date_vol Date,
+    matricule_pilote int,
+    primary key (num_vol)    
+);
+alter table vol add constraint fk_vol_matricule_pilote foreign key (matricule_pilote) references pilote(matricule_pilote);
+```
+-->
 
 ```python
 list_fruits = ['banana', 'mango', 'papaya']
