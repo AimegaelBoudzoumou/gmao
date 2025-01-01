@@ -61,7 +61,8 @@ group by (matricule_pilote);
 
 select p.matricule_pilote, p.name, count(*) nb_vol
 from pilote p join vol v on p.matricule_pilote = v.matricule_pilote
-group by (p.matricule_pilote, p.name);
+group by (p.matricule_pilote, p.name)
+order by p.name;
 ```
 
 https://docs.oracle.com/en/error-help/db/ora-00979/?r=23ai
