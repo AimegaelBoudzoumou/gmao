@@ -83,7 +83,7 @@ select floor(dbms_random.value(1, 300)) from dual;
 
 insert into t values (
     'pc portable',
-    floor(dbms_random.value(1, 300))
+    floor(dbms_random.value(7000000, 7999999))
 );
 
 select * from t order by stock_global;
